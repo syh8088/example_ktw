@@ -1,14 +1,14 @@
 package section4.part2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
-    public ArrayList<Integer> solution2(int size1, int[] arr1, int size2, int[] arr2) {
+    public int solution2(int n, int k, int[] arr) {
 
-        ArrayList<Integer> answer = new ArrayList<>();
+        int answer = 0;
+
 
 
         return answer;
@@ -20,61 +20,61 @@ public class Main {
         Scanner kb = new Scanner(System.in);
 
 //        int n = kb.nextInt();
-//        int[] a = new int[n];
+//        int k = kb.nextInt();
+//        int[] arr = new int[n];
+//
 //        for (int i = 0; i < n; i++) {
-//            a[i] = kb.nextInt();
+//            arr[i] = kb.nextInt();
 //        }
 //
-//        int m = kb.nextInt();
-//        int[] b = new int[m];
-//        for (int i = 0; i < m; i++) {
-//            b[i] = kb.nextInt();
-//        }
-//
-//        for (int x : T.solution(n, a, m, b)) {
-//            System.out.print(x + " ");
-//        }
+//        System.out.print(T.solution3(n, k, arr));
 
-        for (int x : T.solution(
-                5,
-                new int[]{1, 3, 9, 5, 2},
-                5,
-                new int[]{3, 2, 5, 7, 8}
-        )) {
-            System.out.print(x + " ");
-        }
+        System.out.print(T.solution3(
+                10,
+                3,
+                new int[]{12, 15, 11, 20, 25, 10, 20, 19, 13, 15}
+        ));
 
     }
 
-    public ArrayList<Integer> solution(int size1, int[] arr1, int size2, int[] arr2) {
+    public int solution3(int n, int k, int[] arr) {
+        int answer = 0;
+        int sum = 0;
 
-        ArrayList<Integer> answer = new ArrayList<>();
-
-        int p1 = 0, p2 = 0;
-
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-
-        while (p1 < size1 && p2 < size2) {
-
-            int a = arr1[p1];
-            int b = arr2[p2];
-
-            if (a == b) {
-                answer.add(a);
-                p1++;
-                p2++;
-            }
-            else if (a < b) {
-                p1++;
-            }
-            else {
-
-                p2++;
-            }
-
-
+        for (int i = 0; i < k; i++) {
+            sum += arr[i];
         }
+        answer = sum;
+        for (int i = k; i < n; i++) {
+            sum += arr[i] - arr[i - k];
+            answer = Math.max(answer, sum);
+        }
+
+
+        return answer;
+    }
+
+    /**
+     * 내가 풀어본거
+     */
+    public int solution(int n, int k, int[] arr) {
+
+        int answer = 0;
+
+        for (int i = 0; i < n; i++) {
+
+            int i1 = arr[i];
+            if (n - k > i) {
+                for (int j = i + 1; j < i + k; j++) {
+                    int j1 = arr[j];
+                    System.out.println("i = " + i + " j1 = " + j1);
+                    i1 += j1;
+                }
+
+                answer = Math.max(answer, i1);
+            }
+        }
+
 
         return answer;
     }
