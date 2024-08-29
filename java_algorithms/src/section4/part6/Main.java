@@ -32,7 +32,7 @@ public class Main {
     }
 
     public int solution(int n, int k, int[] arr) {
-        
+
         int answer = 0;
         int lt = 0;
         int cnt = 0;
