@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public int solution2(int n, int k, int[] arr) {
+    public int solution2(int n, int m, int[] arr) {
 
         int answer = 0;
-
-
 
         return answer;
     }
