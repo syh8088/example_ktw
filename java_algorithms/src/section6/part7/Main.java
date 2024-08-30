@@ -54,7 +54,7 @@ public class Main {
     }
 
     public String solution3(String a, String b) {
-        
+
         String answer = "YES";
 
         Queue<Character> aQueue = new LinkedList<>();
