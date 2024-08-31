@@ -76,13 +76,42 @@ public class Main {
 //            }
 //        }
 
-        System.out.print(T.solution(5, new int[][] {
+        System.out.print(T.solution2(5, new int[][] {
                 { 2, 3, 1, 7, 3 },
                 { 4, 1, 9, 6, 8 },
                 { 5, 5, 2, 4, 4 },
                 { 6, 5, 2, 6, 7 },
                 { 8, 4, 2, 2, 2 }
         }));
+    }
 
+
+    public int solution4(int n, int[][] arr) {
+
+        int answer = 0;
+
+        for (int i = 0; i < n; i++) {
+            int cnt = 0;
+            for (int j = 1; j <= n; j++) {
+                for (int k = 0; k < n; k++) {
+                    int target = arr[k][i];
+                    int student = arr[j - 1][i];
+                    if (j - 1 != k) {
+                        if (target == student) {
+                            cnt++;
+                            break;
+                        }
+                    }
+
+
+                    System.out.println("target = " + target);
+                    System.out.println("student = " + student);
+                }
+
+                System.out.println("j = " + j + " ==================");
+            }
+        }
+
+        return answer;
     }
 }
