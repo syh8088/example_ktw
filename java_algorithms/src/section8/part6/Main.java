@@ -1,4 +1,4 @@
-package section8.part5;
+package section8.part6;
 
 public class Main {
 
@@ -28,6 +28,14 @@ public class Main {
         tree.root.rt.rt = new Node(7);
 
         tree.DFS(tree.root);
+    }
+
+    /**
+     * 재귀 함수로 풀어보기
+     */
+    public int DFS(int n) {
+
+
     }
 
     static class Node {
