@@ -2,40 +2,47 @@ package section8.part6;
 
 public class Main {
 
-    Node root;
+    static int n;
+    static int[] ch;
 
-    public void DFS(Node root) {
-        if (root == null) return;
-        else {
-            // System.out.println("root = " + root); // 전위순회 출력: 1 2 4 5 3 6 7
-            DFS(root.lt);
-            // System.out.println("root = " + root); // 중위순회 출력: 4 2 5 1 6 3 7
-            DFS(root.rt);
-            // System.out.println("root = " + root); // 후위순회 출력: 4 5 2 6 7 3 1
-        }
+    public void DFS2(int L) {
+
+
     }
 
     public static void main(String[] args) {
 
-        Main tree = new Main();
+        Main T = new Main();
 
-        tree.root = new Node(1);
-        tree.root.lt = new Node(2);
-        tree.root.rt = new Node(3);
-        tree.root.lt.lt = new Node(4);
-        tree.root.lt.rt = new Node(5);
-        tree.root.rt.lt = new Node(6);
-        tree.root.rt.rt = new Node(7);
-
-        tree.DFS(tree.root);
+        n = 3;
+        ch = new int[n + 1];
+        T.DFS(1);
     }
 
-    /**
-     * 재귀 함수로 풀어보기
-     */
-    public int DFS(int n) {
 
+    public void DFS(int L) {
 
+        if (L == n + 1) {
+
+            String temp = "";
+            for (int i = 1; i <= n; i++) {
+                int target = ch[i];
+                if (target == 1) {
+                    temp += (i + " ");
+                }
+            }
+
+            if (temp.length() > 0) {
+                System.out.println(temp);
+            }
+        }
+        else {
+            ch[L] = 1; // 사용 한다는 의미
+            DFS(L + 1);
+
+            ch[L] = 0; // 사용 안한다는 의미
+            DFS(L + 1);
+        }
     }
 
     static class Node {
