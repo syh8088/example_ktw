@@ -8,7 +8,7 @@ public class Main {
 
     public ArrayList<Integer> solution(int n, int m, int[] a, int[] b) {
         ArrayList<Integer> answer = new ArrayList<>();
-        
+
 
         return answer;
     }

@@ -6,7 +6,7 @@ public class Main {
 
     public int solution2(int n) {
         int answer = 0;
-
+     
         return answer;
     }
 
@@ -19,7 +19,7 @@ public class Main {
 //        int n = kb.nextInt();
 //        System.out.print(T.solution(n));
 
-        System.out.print(T.solution(15));
+        System.out.print(T.solution2(15));
 
     }
 

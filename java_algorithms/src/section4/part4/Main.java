@@ -8,6 +8,28 @@ public class Main {
 
         int answer = 0;
 
+        int lt = 0;
+        int sum = 0;
+
+        for (int rt = 0; rt < n; rt++) {
+            int target = arr[rt];
+            sum += target;
+
+            if (sum == m) {
+                answer++;
+            }
+
+            while (sum >= m) {
+                sum -= arr[lt];
+                lt++;
+                if (sum == m) {
+                    answer++;
+                }
+            }
+        }
+
+
+
         return answer;
     }
 
@@ -26,7 +48,7 @@ public class Main {
 //
 //        System.out.print(T.solution(n, k, arr));
 
-        System.out.print(T.solution(
+        System.out.print(T.solution2(
                 8,
                 6,
                 new int[]{1, 2, 1, 3, 1, 1, 1, 2}
