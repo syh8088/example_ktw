@@ -5,7 +5,7 @@ public class Main {
 
     Node root;
 
-    public int DFS2(int s, int e) {
+    public int DFS2(int L, Node root) {
 
         return 0;
     }
