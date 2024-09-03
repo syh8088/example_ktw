@@ -6,7 +6,6 @@ public class Main {
 
     public int[] solution2(int s, int n, int[] arr) {
 
-
         return arr;
     }
 
