@@ -8,27 +8,6 @@ public class Main {
 
         int answer = 0;
 
-        int lt = 0;
-        int sum = 0;
-
-        for (int rt = 0; rt < n; rt++) {
-            int target = arr[rt];
-            sum += target;
-
-            if (sum == m) {
-                answer++;
-            }
-
-            while (sum >= m) {
-                sum -= arr[lt];
-                lt++;
-                if (sum == m) {
-                    answer++;
-                }
-            }
-        }
-
-
 
         return answer;
     }

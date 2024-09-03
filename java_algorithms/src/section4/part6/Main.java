@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    public int solution2(int n) {
+    public int solution2(int n, int k, int[] arr) {
+
         int answer = 0;
 
         return answer;
@@ -25,7 +26,7 @@ public class Main {
 //        }
 //        System.out.print(T.solution(n, k, arr));
 
-        System.out.print(T.solution(14, 2, new int[] {
+        System.out.print(T.solution2(14, 2, new int[] {
                 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1
         }));
 
