@@ -7,7 +7,7 @@ public class Main {
 
     public String solution2(int n, int[] arr) {
         String answer = "U";
-        
+
 
         return answer;
     }

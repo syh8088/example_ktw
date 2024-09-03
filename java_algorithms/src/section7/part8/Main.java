@@ -8,6 +8,7 @@ public class Main {
     public int solution2(int m, int[] arr) {
         int answer = 0;
 
+
         return answer;
     }
 
@@ -26,7 +27,7 @@ public class Main {
 //        }
 //        System.out.print(T.solution(m, arr));
 
-        System.out.print(T.solution(32, new int[] {23, 87, 65, 12, 57, 32, 99, 81}));
+        System.out.print(T.solution2(32, new int[] {23, 87, 65, 12, 57, 32, 99, 81}));
     }
 
     /**

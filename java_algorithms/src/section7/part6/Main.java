@@ -31,7 +31,7 @@ public class Main {
 //        }
 
 
-        for (int x : T.solution(9, new int[]{ 120, 125, 152, 130, 135, 135, 143, 127, 160 })) {
+        for (int x : T.solution2(9, new int[]{ 120, 125, 152, 130, 135, 135, 143, 127, 160 })) {
             System.out.print(x + " ");
         }
     }
