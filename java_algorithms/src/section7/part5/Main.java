@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Main {
 
     public String solution2(int n, int[] arr) {
-        String answer = "D";
+        String answer = "U";
+        
 
         return answer;
     }
@@ -17,15 +18,15 @@ public class Main {
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
 
-        int n = kb.nextInt();
+//        int n = kb.nextInt();
+//
+//        int[] arr = new int[n];
+//        for (int i = 0; i < n; i++) {
+//            arr[i] = kb.nextInt();
+//        }
+//        System.out.print(T.solution(n, arr));
 
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = kb.nextInt();
-        }
-        System.out.print(T.solution(n, arr));
-
-//        System.out.print(T.solution(8, new int[] {20, 25, 52, 30, 39, 33, 43, 33}));
+        System.out.print(T.solution2(8, new int[] {20, 25, 52, 30, 39, 33, 43, 33}));
     }
 
     /**
