@@ -22,7 +22,7 @@ public class Main {
 //        int k = kb.nextInt();
 //        System.out.print(T.solution(n, k));
 
-        System.out.print(T.solution(8, 3));
+        System.out.print(T.solution2(8, 3));
     }
 
     public int solution(int n, int k) {
