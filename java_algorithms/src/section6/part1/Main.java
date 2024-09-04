@@ -21,8 +21,8 @@ public class Main {
 //        String str = kb.next();
 //        System.out.print(T.solution(str));
 
-        System.out.print(T.solution("(()(()))(()")); // NO
-//        System.out.print(T.solution("(())()")); // YES
+        System.out.print(T.solution2("(()(()))(()")); // NO
+//        System.out.print(T.solution2("(())()")); // YES
     }
 
     public String solution(String str) {
