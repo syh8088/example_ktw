@@ -24,26 +24,7 @@ public class Main {
 
     public int solution2(int n, ArrayList<Lecture> arr) {
 
-        int answer = Integer.MIN_VALUE;
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
-        Collections.sort(arr);
-
-        int j = 0;
-        for (int i = max; i >= 1; i--) {
-
-            for (; j < n; j++) {
-                Lecture lecture = arr.get(j);
-                if (lecture.time < i) {
-                    break;
-                }
-
-                priorityQueue.offer(lecture.money);
-            }
-
-            if (!priorityQueue.isEmpty()) {
-                answer += priorityQueue.poll();
-            }
-        }
+        int answer = 0;
 
         return answer;
     }
