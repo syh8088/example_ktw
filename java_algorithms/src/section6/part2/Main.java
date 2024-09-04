@@ -21,7 +21,7 @@ public class Main {
 //        String str = kb.next();
 //        System.out.print(T.solution(str));
 
-        System.out.print(T.solution("(A(BC)D)EF(G(H)(IJ)K)LM(N)"));
+        System.out.print(T.solution2("(A(BC)D)EF(G(H)(IJ)K)LM(N)"));
     }
 
     public String solution(String str) {
