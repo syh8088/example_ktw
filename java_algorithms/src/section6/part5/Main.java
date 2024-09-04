@@ -20,7 +20,7 @@ public class Main {
 //        String str = kb.next();
 //        System.out.print(T.solution(str));
 
-        System.out.print(T.solution("()(((()())(())()))(())"));
+        System.out.print(T.solution2("()(((()())(())()))(())"));
     }
 
     public int solution(String str) {
