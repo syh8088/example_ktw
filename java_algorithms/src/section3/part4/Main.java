@@ -8,7 +8,7 @@ public class Main {
 
         int[] answer = new int[n];
 
-        
+
         return answer;
     }
 
