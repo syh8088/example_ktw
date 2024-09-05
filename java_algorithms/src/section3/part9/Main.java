@@ -4,6 +4,35 @@ import java.util.Scanner;
 
 public class Main {
 
+    public int solution2(int n, int[][] arr) {
+
+        return 0;
+    }
+
+    public static void main(String[] args) {
+
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+
+//        int n = kb.nextInt();
+//        int[][] arr = new int[n][n];
+//
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j < n; j++) {
+//                arr[i][j] = kb.nextInt();
+//            }
+//        }
+
+        System.out.print(T.solution2(5, new int[][] {
+                { 10, 13, 10, 12, 15 },
+                { 12, 39, 30, 23, 11 },
+                { 11, 25, 50, 53, 15 },
+                { 19, 27, 29, 37, 27 },
+                { 19, 13, 30, 13, 19 }
+        }));
+
+    }
+
     public int solution(int n, int[][] target) {
 
         int answer = Integer.MIN_VALUE;
@@ -33,29 +62,5 @@ public class Main {
         answer = Math.max(answer, sum2);
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-
-        Main T = new Main();
-        Scanner kb = new Scanner(System.in);
-
-//        int n = kb.nextInt();
-//        int[][] arr = new int[n][n];
-//
-//        for (int i = 0; i < n; i++) {
-//            for (int j = 0; j < n; j++) {
-//                arr[i][j] = kb.nextInt();
-//            }
-//        }
-
-        System.out.print(T.solution(5, new int[][] {
-                { 10, 13, 10, 12, 15 },
-                { 12, 39, 30, 23, 11 },
-                { 11, 25, 50, 53, 15 },
-                { 19, 27, 29, 37, 27 },
-                { 19, 13, 30, 13, 19 }
-        }));
-
     }
 }
