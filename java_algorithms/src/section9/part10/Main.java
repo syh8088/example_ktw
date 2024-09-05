@@ -19,9 +19,9 @@ public class Main {
 
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
-//        board = new int[8][8];
-//        for (int i = 0; i < 8; i++) {
-//            for (int j = 0; j < 8; j++) {
+//        board = new int[7][7];
+//        for (int i = 0; i < 7; i++) {
+//            for (int j = 0; j < 7; j++) {
 //                board[i][j] = kb.nextInt();
 //            }
 //        }
