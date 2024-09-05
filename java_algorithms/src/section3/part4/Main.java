@@ -1,9 +1,31 @@
 package section3.part4;
 
-import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Main {
+
+    public int[] solution2(int n) {
+
+        int[] answer = new int[n];
+
+        
+        return answer;
+    }
+
+    public static void main(String[] args) {
+
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+
+//        int n = kb.nextInt();
+//        for (int x : T.solution(n)) {
+//            System.out.print(x + " ");
+//        }
+
+        for (int x : T.solution2(10)) {
+            System.out.print(x + " ");
+        }
+    }
 
     /**
      * 배열 쓰지 않고 해보기
@@ -31,20 +53,5 @@ public class Main {
 
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-
-        Main T = new Main();
-        Scanner kb = new Scanner(System.in);
-
-//        for (int x : T.solution(10)) {
-//            System.out.print(x + " ");
-//        }
-
-        int n = kb.nextInt();
-        for (int x : T.solution(n)) {
-            System.out.print(x + " ");
-        }
     }
 }
