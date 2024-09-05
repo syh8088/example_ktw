@@ -10,7 +10,7 @@ public class Main {
     public int solution2(int n, int[][] arr) {
 
         int answer = 0;
-        
+
 
         return answer;
     }

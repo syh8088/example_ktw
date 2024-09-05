@@ -8,8 +8,6 @@ public class Main {
 
         int answer = 0;
 
-
-
         return answer;
     }
 
@@ -28,7 +26,7 @@ public class Main {
 //
 //        System.out.print(T.solution3(n, k, arr));
 
-        System.out.print(T.solution3(
+        System.out.print(T.solution2(
                 10,
                 3,
                 new int[]{12, 15, 11, 20, 25, 10, 20, 19, 13, 15}
