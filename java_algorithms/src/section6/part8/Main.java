@@ -9,8 +9,7 @@ public class Main {
     public int solution2(int n, int m, int[] arr) {
 
         int answer = 0;
-
-
+        
         return answer;
     }
 
@@ -29,7 +28,7 @@ public class Main {
 //        }
 //        System.out.print(T.solution(n, m, arr));
 
-        System.out.print(T.solution(5, 2, new int[]{ 60, 50, 70, 80, 90 }));
+        System.out.print(T.solution2(5, 2, new int[]{ 60, 50, 70, 80, 90 }));
     }
 
     /**
@@ -61,15 +60,15 @@ public class Main {
 
         return answer;
     }
+}
 
-    class Person {
+class Person {
 
-        int id;
-        int priority;
+    int id;
+    int priority;
 
-        public Person(int id, int priority) {
-            this.id = id;
-            this.priority = priority;
-        }
+    public Person(int id, int priority) {
+        this.id = id;
+        this.priority = priority;
     }
 }
