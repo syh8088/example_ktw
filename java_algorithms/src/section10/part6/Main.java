@@ -56,12 +56,12 @@ public class Main {
                 {8, 9}
         };
         for (int i = 0; i < m; i++) {
-            int[] ints = arr[0];
+            int[] ints = arr[i];
             int a = ints[0];
             int b = ints[1];
             Union(a, b);
         }
-        
+
 //        int a = kb.nextInt();
 //        int b = kb.nextInt();
         int a = 3;
