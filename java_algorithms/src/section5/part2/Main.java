@@ -11,7 +11,7 @@ public class Main {
 
         String answer = "YES";
 
-        
+
         return answer;
     }
 
