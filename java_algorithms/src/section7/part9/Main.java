@@ -10,6 +10,8 @@ public class Main {
         int answer = 0;
 
 
+        
+
         return answer;
     }
 
@@ -28,7 +30,7 @@ public class Main {
 //        }
 //        System.out.print(T.solution(n, m, arr));
 
-        System.out.print(T.solution(9, 3, new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}));
+        System.out.print(T.solution2(9, 3, new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}));
     }
 
     /**
@@ -45,7 +47,7 @@ public class Main {
             int mid = (lt + rt) / 2;
             if (this.count(arr, mid) <= m) {
                 answer = mid;
-                rt = mid -1;
+                rt = mid - 1;
             }
             else {
                 lt = mid + 1;
