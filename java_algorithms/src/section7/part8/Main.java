@@ -8,6 +8,7 @@ public class Main {
     public int solution2(int m, int[] arr) {
         int answer = 0;
 
+        
 
         return answer;
     }
@@ -41,20 +42,17 @@ public class Main {
         int lt = 0;
         int rt = arr.length - 1;
 
-        int mid = (lt + rt) / 2;
+        while (lt <= rt) {
+            int mid = (lt + rt) / 2;
+            if (arr[mid] == m) {
+                return mid + 1;
+            }
 
-        if (arr[mid] == m) return mid + 1;
-
-        if (arr[mid] > m) {
-            rt = mid - 1;
-        }
-        else {
-            lt = mid + 1;
-        }
-
-        for (int i = lt; i <= rt; i++) {
-            if (arr[i] == m) {
-                return i + 1;
+            if (arr[mid] > m) {
+                rt = mid - 1;
+            }
+            else {
+                lt = mid + 1;
             }
         }
 
