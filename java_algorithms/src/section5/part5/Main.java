@@ -4,9 +4,14 @@ import java.util.*;
 
 public class Main {
 
-    public int solution3(int n, int k, int[] arr) {
+    public int solution2(int n, int k, int[] arr) {
 
         int answer = 0;
+
+
+
+
+
         return answer;
     }
 
@@ -26,7 +31,7 @@ public class Main {
 //
 //        System.out.print(T.solution(n, k, arr));
 
-        System.out.print(T.solution(10, 3, new int[] {13, 15, 34, 23, 45, 65, 33, 11, 26, 42}));
+        System.out.print(T.solution2(10, 3, new int[] {13, 15, 34, 23, 45, 65, 33, 11, 26, 42}));
 
     }
 
