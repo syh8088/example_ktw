@@ -9,6 +9,9 @@ public class Main {
 
         int answer = 0;
 
+        
+
+
 
         return answer;
     }
@@ -24,7 +27,7 @@ public class Main {
 //        String b = kb.next();
 //        System.out.print(T.solution(a, b));
 
-        System.out.print(T.solution("bacaAacba", "abc"));
+        System.out.print(T.solution2("bacaAacba", "abc"));
 
     }
 
