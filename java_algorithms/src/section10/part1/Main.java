@@ -1,7 +1,6 @@
 package section10.part1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
@@ -24,9 +23,14 @@ class Body implements Comparable<Body> {
 public class Main {
 
     public int solution2(int n, ArrayList<Body> arr) {
+
         int cnt = 0;
 
 
+
+
+
+        
 
         return cnt;
     }
@@ -52,7 +56,7 @@ public class Main {
         arr.add(new Body(170, 72));
         arr.add(new Body(181, 60));
 
-        System.out.println(T.solution(5, arr));
+        System.out.println(T.solution2(5, arr));
     }
 
     /**
