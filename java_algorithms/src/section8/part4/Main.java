@@ -4,6 +4,7 @@ public class Main {
 
     public int DFS2(int n) {
 
+
         return 0;
     }
 
@@ -13,7 +14,7 @@ public class Main {
         Main T = new Main();
         int n = 10;
         for (int i = 1; i <= n; i++) {
-            System.out.print(T.DFS(i) + " ");
+            System.out.print(T.DFS2(i) + " ");
         }
     }
 
@@ -33,5 +34,22 @@ public class Main {
         }
     }
 
+    static int[] fibo = new int[10 + 1];
+    public int DFS3(int n) {
 
+        if (fibo[0] > 0) {
+            return fibo[0];
+        }
+
+        if (n == 1) {
+            return fibo[n] = 1;
+        }
+        else if (n == 2) {
+            return fibo[n] = 1;
+        }
+        else {
+            fibo[n] = DFS3(n - 1) + DFS3(n - 2);
+            return fibo[n];
+        }
+    }
 }
