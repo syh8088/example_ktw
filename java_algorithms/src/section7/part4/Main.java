@@ -6,6 +6,13 @@ public class Main {
 
     public int[] solution2(int s, int n, int[] arr) {
 
+
+
+
+
+
+
+        
         return arr;
     }
 
@@ -27,7 +34,7 @@ public class Main {
 //        }
 
 
-        for (int x : T.solution(5, 9, new int[]{ 1, 2, 3, 2, 6, 2, 3, 5, 7 })) {
+        for (int x : T.solution2(5, 9, new int[]{ 1, 2, 3, 2, 6, 2, 3, 5, 7 })) {
             System.out.print(x + " ");
         }
     }
