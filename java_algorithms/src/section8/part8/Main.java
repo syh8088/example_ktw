@@ -1,18 +1,21 @@
 package section8.part8;
 
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
 
-    int answer = 0;
     int[] dis = {1, -1, 5};
     int[] ch;
     Queue<Integer> Q = new LinkedList<>();
 
     public int BFS2(int s, int e) {
+
+
+        
+
+
 
         return 0;
     }
@@ -26,7 +29,7 @@ public class Main {
 //        int e = kb.nextInt();
 //        System.out.println(T.BFS(s, e));
 
-        System.out.println(T.BFS(5, 14));
+        System.out.println(T.BFS2(5, 14));
     }
 
 
