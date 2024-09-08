@@ -31,6 +31,10 @@ public class Main {
         int cnt = 0;
 
 
+        
+
+
+
 
         return cnt;
     }
@@ -56,7 +60,7 @@ public class Main {
         arr.add(new CourseSlug(4, 6));
         arr.add(new CourseSlug(5, 7));
 
-        System.out.println(T.solution(5, arr));
+        System.out.println(T.solution2(5, arr));
     }
 
     /**
