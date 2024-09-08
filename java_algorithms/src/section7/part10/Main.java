@@ -5,9 +5,13 @@ import java.util.Scanner;
 
 public class Main {
 
+
     public int solution2(int n, int c, int[] arr) {
 
         int answer = 0;
+
+
+        
 
 
         return answer;
@@ -28,7 +32,7 @@ public class Main {
 //        }
 //        System.out.print(T.solution(n, c, arr));
 
-        System.out.print(T.solution(5, 3, new int[] {1, 2, 8, 4, 9}));
+        System.out.print(T.solution2(5, 3, new int[] {1, 2, 8, 4, 9}));
     }
 
     /**
