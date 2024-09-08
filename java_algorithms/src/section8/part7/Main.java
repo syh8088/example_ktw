@@ -3,6 +3,19 @@ package section8.part7;
 import java.util.LinkedList;
 import java.util.Queue;
 
+class Node {
+
+    int data;
+    Node lt;
+    Node rt;
+
+    public Node(int data) {
+        this.data = data;
+        lt = null;
+        rt = null;
+    }
+}
+
 public class Main {
 
     Node root;
@@ -24,7 +37,7 @@ public class Main {
         tree.root.rt.lt = new Node(6);
         tree.root.rt.rt = new Node(7);
 
-        tree.BFS(tree.root);
+        tree.BFS2(tree.root);
     }
 
 
@@ -57,16 +70,5 @@ public class Main {
 
     }
 
-    static class Node {
 
-        int data;
-        Node lt;
-        Node rt;
-
-        public Node(int data) {
-            this.data = data;
-            lt = null;
-            rt = null;
-        }
-    }
 }
