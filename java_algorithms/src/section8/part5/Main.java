@@ -2,6 +2,20 @@ package section8.part5;
 
 public class Main {
 
+    public void DFS2(Node root) {
+
+        
+
+    }
+
+
+
+
+
+
+
+
+
     Node root;
 
     public void DFS(Node root) {
