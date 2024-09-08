@@ -7,8 +7,18 @@ public class Main {
 
     public void DFS2(int L) {
 
+  
+
+
+
+
 
     }
+
+
+
+
+
 
     public static void main(String[] args) {
 
@@ -16,7 +26,7 @@ public class Main {
 
         n = 3;
         ch = new int[n + 1];
-        T.DFS(1);
+        T.DFS2(1);
     }
 
 
