@@ -11,6 +11,11 @@ public class Main {
     public void DFS2(int L, int sum, int[] arr) {
 
 
+
+
+
+
+        
     }
 
 
@@ -30,7 +35,7 @@ public class Main {
         n = 5;
         c = 259;
         int[] arr = new int[] {81, 58, 42, 33, 61};
-        T.DFS(0, 0, arr);
+        T.DFS2(0, 0, arr);
         System.out.print(answer);
     }
 
