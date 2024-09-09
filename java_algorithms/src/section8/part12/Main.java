@@ -1,8 +1,5 @@
 package section8.part12;
 
-
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
@@ -13,7 +10,7 @@ public class Main {
     static int[][] graph;
     static int[] ch;
 
-    public void BFS2(int v) {
+    public void DFS2(int v) {
 
 
     }
@@ -38,20 +35,27 @@ public class Main {
 //            graph[a][b] = 1;
 //        }
 
+
+//        {1, 2},
+//        {1, 3},
+//        {1, 4},
+//        {2, 1},
+//        {2, 3},
+//        {2, 5},
+//        {3, 4},
+//        {4, 2},
+//        {4, 5}
+
         graph = new int[][]{
-                {1, 2},
-                {1, 3},
-                {1, 4},
-                {2, 1},
-                {2, 3},
-                {2, 5},
-                {3, 4},
-                {4, 2},
-                {4, 5}
+                {0, 0, 0, 0, 0, 0},
+                {0, 0, 1, 1, 1, 0},
+                {0, 1, 0, 1, 0, 1},
+                {0, 0, 0, 0, 1, 0},
+                {0, 0, 1, 0, 0, 1},
         };
 
         ch[1] = 1;
-        T.DFS(1);
+        T.DFS2(1);
         System.out.println(answer);
 
     }
