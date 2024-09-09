@@ -26,6 +26,11 @@ public class Main {
 
         int answer = 0;
 
+
+
+
+
+        
         return answer;
     }
 
@@ -52,7 +57,7 @@ public class Main {
         arr.add(new Lecture(30, 3));
         arr.add(new Lecture(30, 1));
 
-        System.out.println(T.solution(6, arr));
+        System.out.println(T.solution2(6, arr));
     }
 
     /**
