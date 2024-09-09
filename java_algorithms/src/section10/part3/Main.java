@@ -28,7 +28,11 @@ class Time implements Comparable<Time> {
 public class Main {
 
     public int solution2(int n, ArrayList<Time> arr) {
+
         int answer = Integer.MIN_VALUE;
+
+
+        
 
 
 
@@ -62,7 +66,7 @@ public class Main {
         arr.add(new Time(5, 's'));
         arr.add(new Time(14, 'e'));
 
-        System.out.println(T.solution(5, arr));
+        System.out.println(T.solution2(5, arr));
     }
 
     /**
