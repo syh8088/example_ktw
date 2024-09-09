@@ -10,6 +10,12 @@ public class Main {
 
     public int BFS2(Node root) {
 
+
+        
+
+
+
+
         return 0;
     }
 
@@ -23,7 +29,7 @@ public class Main {
         tree.root.lt.lt = new Node(4);
         tree.root.lt.rt = new Node(5);
 
-        System.out.println(tree.BFS(tree.root));
+        System.out.println(tree.BFS2(tree.root));
     }
 
     public int BFS(Node root) {
