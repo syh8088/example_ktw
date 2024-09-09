@@ -7,7 +7,13 @@ public class Main {
 
     public int DFS2(int L, Node root) {
 
-        return 0;
+
+
+
+
+
+
+        return L;
     }
 
     public static void main(String[] args) {
@@ -20,7 +26,7 @@ public class Main {
         tree.root.lt.lt = new Node(4);
         tree.root.lt.rt = new Node(5);
 
-        System.out.println(tree.DFS(0, tree.root));
+        System.out.println(tree.DFS2(0, tree.root));
     }
 
     public int DFS(int L, Node root) {
