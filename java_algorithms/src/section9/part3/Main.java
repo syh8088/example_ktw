@@ -11,6 +11,13 @@ public class Main {
     public void DFS2(int L, int sum, int time, int[] ps, int[] pt) {
 
 
+
+        
+
+
+
+
+
     }
 
 
@@ -36,7 +43,7 @@ public class Main {
         m = 20;
         int[] a = new int[] {10, 25, 15, 6, 7};
         int[] b = new int[] {5, 12, 8, 3, 4};
-        T.DFS(0, 0, 0, a, b);
+        T.DFS2(0, 0, 0, a, b);
         System.out.print(answer);
     }
 
