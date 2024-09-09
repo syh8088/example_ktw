@@ -2,7 +2,6 @@ package section9.part1;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Stack;
 
 public class Main {
 
@@ -12,6 +11,12 @@ public class Main {
     boolean flag = false;
 
     public void DFS2(int L, int sum, int[] arr) {
+
+
+
+
+
+
 
 
     }
@@ -33,7 +38,7 @@ public class Main {
         n = 6;
         int[] arr = new int[] {1, 3, 5, 6, 7, 10};
         total = Arrays.stream(arr).sum();
-        T.DFS(0, 0, arr);
+        T.DFS2(0, 0, arr);
         System.out.print(answer);
     }
 
