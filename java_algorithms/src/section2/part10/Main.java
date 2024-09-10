@@ -1,10 +1,36 @@
 package section2.part10;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+
+    public int[] solution2(String str, char target) {
+
+        int[] answer = new int[str.length()];
+
+
+
+
+
+
+
+
+
+
+
+        return answer;
+    }
+
+    public static void main(String[] args) {
+
+        Main T = new Main();
+//        Scanner kb = new Scanner(System.in);
+//        String str = kb.next();
+        System.out.print(T.solution2("teachermode", 'e'));
+    }
+
+
+
 
     public int[] solution(String str, char target) {
 
@@ -38,13 +64,5 @@ public class Main {
         }
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-
-        Main T = new Main();
-//        Scanner kb = new Scanner(System.in);
-//        String str = kb.next();
-        System.out.print(T.solution("teachermode", 'e'));
     }
 }
