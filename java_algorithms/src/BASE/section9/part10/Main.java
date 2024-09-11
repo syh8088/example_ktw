@@ -12,6 +12,9 @@ public class Main {
     public void DFS2(int x, int y) {
 
 
+
+
+        
     }
 
 
@@ -37,7 +40,7 @@ public class Main {
         };
         board[0][0] = 1;
 
-        T.DFS(0, 0);
+        T.DFS2(0, 0);
         System.out.println(answer);
     }
 
