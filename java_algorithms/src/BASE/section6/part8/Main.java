@@ -4,11 +4,30 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+
+class Person {
+
+    int id;
+    int priority;
+
+    public Person(int id, int priority) {
+        this.id = id;
+        this.priority = priority;
+    }
+}
+
 public class Main {
 
     public int solution2(int n, int m, int[] arr) {
 
         int answer = 0;
+
+
+        
+
+
+
+
 
         return answer;
     }
@@ -29,6 +48,7 @@ public class Main {
 //        System.out.print(T.solution(n, m, arr));
 
         System.out.print(T.solution2(5, 2, new int[]{ 60, 50, 70, 80, 90 }));
+//        System.out.print(T.solution2(6, 3, new int[]{ 70, 60, 90, 60, 60, 60 }));
     }
 
     /**
@@ -62,13 +82,3 @@ public class Main {
     }
 }
 
-class Person {
-
-    int id;
-    int priority;
-
-    public Person(int id, int priority) {
-        this.id = id;
-        this.priority = priority;
-    }
-}
