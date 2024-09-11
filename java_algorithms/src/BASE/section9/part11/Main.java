@@ -25,6 +25,10 @@ public class Main {
     public void BFS2(int x, int y) {
 
 
+
+        
+
+
     }
 
 
@@ -49,7 +53,7 @@ public class Main {
                 {1, 0, 1, 0, 0, 0, 0}
         };
         dis = new int[7][7];
-        T.BFS(0, 0);
+        T.BFS2(0, 0);
         if (dis[6][6] == 0) {
             System.out.println(-1);
         }
