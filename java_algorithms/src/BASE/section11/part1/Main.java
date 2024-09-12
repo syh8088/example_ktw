@@ -11,6 +11,8 @@ public class Main {
 
         int answer = 0;
 
+
+
         return answer;
     }
 
@@ -26,7 +28,7 @@ public class Main {
 
 //        T.DFS(0, 7, 0);
 //        System.out.println(cnt);
-        System.out.println(T.solution(7));
+        System.out.println(T.solution2(7));
     }
 
     public void DFS(int L, int n, int sum) {

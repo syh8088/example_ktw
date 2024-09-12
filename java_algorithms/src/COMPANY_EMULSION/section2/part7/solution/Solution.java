@@ -3,7 +3,7 @@ package COMPANY_EMULSION.section2.part7.solution;
 import java.util.*;
 
 class Solution {
-    
+
     public int solution(int[] keypad, String password) {
 
         int answer = 0;
