@@ -8,6 +8,15 @@ public class Main {
 
         List<Integer> answer = new ArrayList<>();
 
+        
+
+
+
+
+
+
+
+
 
 
         return answer;
@@ -31,7 +40,7 @@ public class Main {
 //            System.out.print(x + " ");
 //        }
 
-        System.out.print(T.solution(7, 4, new int[] {20, 12, 20, 10, 23, 17, 10}));
+        System.out.print(T.solution3(7, 4, new int[] {20, 12, 20, 10, 23, 17, 10}));
 
     }
 
