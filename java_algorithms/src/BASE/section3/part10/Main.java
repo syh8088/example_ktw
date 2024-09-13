@@ -12,6 +12,9 @@ public class Main {
         int answer = 0;
 
 
+
+        
+
         return answer;
     }
 
@@ -28,6 +31,7 @@ public class Main {
 //                arr[i][j] = kb.nextInt();
 //            }
 //        }
+//        System.out.print(T.solution2(n, arr));
 
         System.out.print(T.solution2(5, new int[][] {
                 { 5, 3, 7, 2, 3 },
