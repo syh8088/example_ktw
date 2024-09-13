@@ -8,6 +8,14 @@ public class Main {
         int answer = 0;
 
 
+        
+
+
+
+
+
+
+
 
 
         return answer;
@@ -27,7 +35,7 @@ public class Main {
 //            }
 //        }
 
-        System.out.print(T.solution2(5, new int[][] {
+        System.out.print(T.solution5(5, new int[][] {
                 { 0, 0, 0, 0, 0, 0 },
                 { 0, 2, 3, 1, 7, 3 },
                 { 0, 4, 1, 9, 6, 8 },
@@ -42,41 +50,35 @@ public class Main {
         int answer = 0;
         int max = Integer.MIN_VALUE;
 
-        int jj = 0;
-        int kk = 0;
-
         for (int i = 1; i <= n; i++) {
+
             int cnt = 0;
             for (int j = 1; j <= n; j++) {
-                jj++;
+
                 for (int k = 1; k <= n; k++) {
-                    kk++;
-                    int ivalue = arr[i][k];
-                    int jvalue = arr[j][k];
 
-                    System.out.println("i = " + i + ", k = " + k + ", value=" + ivalue);
-                    System.out.println("j = " + j + ", k = " + k + ", value=" + jvalue);
+                    int iTarget = arr[i][k];
+                    int jTarget = arr[j][k];
 
-                    System.out.println("==============================");
-//                    if (ivalue == jvalue) {
-//                        cnt++;
-//                        break;
-//                    }
+                    System.out.println("iTarget = " + iTarget);
+                    System.out.println("jTarget = " + jTarget);
+                    if (iTarget == jTarget) {
+                        cnt++;
+                        break;
+                    }
                 }
 
-                System.out.println("###############################");
+            }
+            if (cnt > max) {
+                max = cnt;
+                answer = i;
             }
 
-//            if (cnt > max) {
-//                max = cnt;
-//                answer = i;
-//            }
-            System.out.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
+
+            answer = Math.max(answer, cnt);
         }
 
 
-        System.out.println("jj = " + jj);
-        System.out.println("kk = " + kk);
         return answer;
     }
 
