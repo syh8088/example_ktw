@@ -7,6 +7,11 @@ public class Main {
     public int[] solution2(int n, int[] arr) {
 
 
+
+
+
+
+
         return null;
     }
 
@@ -27,8 +32,8 @@ public class Main {
 
         for (int result : T.solution2(
                 5,
-//                new int[] {87, 89, 92, 100, 76}
-                new int[] {87, 87, 92, 100, 76}
+                new int[] {87, 89, 92, 100, 76}
+//                new int[] {87, 87, 92, 100, 76}
         )
         ) {
             System.out.println(result);
