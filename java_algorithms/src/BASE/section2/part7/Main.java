@@ -33,7 +33,9 @@ public class Main {
         str = str.toUpperCase();
 
         int len = str.length() / 2;
-        int lt = 0, rt = str.length() - 1;
+        int lt = 0;
+        int rt = str.length() - 1;
+
         for (int i = 0; i < len; i++) {
 
             char ltChar = str.charAt(lt);
