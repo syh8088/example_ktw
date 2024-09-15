@@ -20,7 +20,7 @@ class Solution {
         System.out.println(Arrays.toString(T.solution(new int[]{12, 5, 7, 23, 45, 21, 17})));
     }
 
-    
+
 
     /**
      * 내가 풀어본거...
