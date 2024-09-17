@@ -26,7 +26,6 @@ class Main {
         Main T = new Main();
 
         Scanner kb = new Scanner(System.in);
-//        m = kb.nextInt();
 //        n = kb.nextInt();
 
         n = 7;
