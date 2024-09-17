@@ -27,7 +27,6 @@ public class Main {
 
 
 
-        
 
 
     }
@@ -66,23 +65,23 @@ public class Main {
 
     public void BFS(int x, int y) {
 
-        Queue<Point> Q = new LinkedList<>();
-        Q.offer(new Point(x, y));
+        Queue<Point> queue = new LinkedList<>();
+        queue.offer(new Point(x, y));
 
         board[x][y] = 1;
-        while (!Q.isEmpty()) {
-            Point point = Q.poll();
+        while (!queue.isEmpty()) {
+            Point point = queue.poll();
             for (int i = 0; i < 4; i++) {
                 int nx = point.x + dx[i];
                 int ny = point.y + dy[i];
 
-                // 경계선 밖인가?
+                // 경계선 밖이 아닌가?
                 if (nx >= 0 && nx <= 6 && ny >= 0 && ny <= 6) {
                     // 갈수있는 통로인가?
                     int target = board[nx][ny];
                     if (target == 0) {
                         board[nx][ny] = 1;
-                        Q.offer(new Point(nx, ny));
+                        queue.offer(new Point(nx, ny));
                         dis[nx][ny] = dis[point.x][point.y] + 1;
                     }
 
