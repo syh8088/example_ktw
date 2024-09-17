@@ -2,9 +2,11 @@ package BASE.section9.part12;
 
 import java.util.*;
 
-class Point{
+class Point {
+
     public int x, y;
-    Point(int x, int y){
+
+    Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -25,7 +27,9 @@ class Main {
     public void BFS2() {
 
 
-        
+
+
+
 
 
     }
