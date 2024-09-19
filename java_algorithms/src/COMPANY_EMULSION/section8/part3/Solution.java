@@ -24,11 +24,7 @@ class Solution {
         System.out.println(T.solution(2, 54321));
     }
 
-    int[][] df = new int[][] {
-            {1, 0},
-            {-1, 0},
-            {2, 1},
-    };
+
 
     public int solution(int s, int e) {
 
@@ -39,7 +35,7 @@ class Solution {
 
 
 
-        
+
         return answer;
     }
 }
