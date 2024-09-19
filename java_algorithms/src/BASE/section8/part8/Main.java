@@ -8,7 +8,7 @@ public class Main {
 
     int[] dis = {1, -1, 5};
     int[] ch;
-    Queue<Integer> Q = new LinkedList<>();
+    Queue<Integer> queue = new LinkedList<>();
 
     public int BFS2(int s, int e) {
 
@@ -38,16 +38,16 @@ public class Main {
         ch = new int[10001];
         ch[s] = 1;
 
-        Q.offer(s);
+        queue.offer(s);
         int level = 0;
 
-        while(!Q.isEmpty()) {
+        while (!queue.isEmpty()) {
 
-            int len = Q.size();
+            int len = queue.size();
 
             for (int i = 0; i < len; i++) {
 
-                int x = Q.poll();
+                int x = queue.poll();
                 if (x == e) {
                     return level;
                 }
@@ -57,7 +57,7 @@ public class Main {
                     int nx = x + dis[j];
                     if (nx >= 1 && nx <= 10000 && ch[nx] == 0) {
                         ch[nx] = 1;
-                        Q.offer(nx);
+                        queue.offer(nx);
                     }
                 }
             }
