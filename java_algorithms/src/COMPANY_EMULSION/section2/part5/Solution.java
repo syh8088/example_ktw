@@ -7,7 +7,7 @@ class Solution {
     public int solution2(int[] nums) {
 
         int answer = 0;
-        
+
 
 
 

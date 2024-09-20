@@ -33,8 +33,8 @@ class Solution {
                 int from = pad[i][j];
 
                 for (int k = 0; k < 8; k++) {
-                    if (i+dx[k] >= 0 && i+dx[k] < 3 && j+dy[k] >= 0 && j+dy[k] < 3) {
-                        int to = pad[i+dx[k]][j+dy[k]];
+                    if (i + dx[k] >= 0 &&  i + dx[k] < 3 && j + dy[k] >= 0 && j + dy[k] < 3) {
+                        int to = pad[i + dx[k]][j + dy[k]];
                         dist[from][to] = 1;
                     }
                 }
@@ -50,7 +50,7 @@ class Solution {
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
         System.out.println(T.solution(new int[] {
                 2, 5, 3,
