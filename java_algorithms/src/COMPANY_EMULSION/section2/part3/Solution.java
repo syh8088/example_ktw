@@ -3,14 +3,12 @@ package COMPANY_EMULSION.section2.part3;
 import java.util.*;
 
 class Solution {
+
     public int solution(int[][] board) {
 
         int answer = 0;
 
-
-
-
-
+        
 
 
 

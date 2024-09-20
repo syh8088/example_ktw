@@ -1,8 +1,10 @@
 package COMPANY_EMULSION.section2.part3.solution;
 
 import java.util.*;
+
 class Solution {
-    public int solution(int[][] board){
+
+    public int solution(int[][] board) {
 
         int n = board.length;
         int[] dx = {-1, 0, 1, 0};
@@ -57,11 +59,14 @@ class Solution {
             if (x1 == x2 && y1 == y2) break;
         }
 
-        if (count >= 10000) return 0;
+        if (count >= 10000) {
+            return 0;
+        }
+
         return count;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
         int[][] arr1 = {
                 {0, 0, 0, 0, 0, 0, 1, 0, 0, 0},

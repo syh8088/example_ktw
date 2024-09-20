@@ -56,9 +56,12 @@ public class Main {
 
     public void DFS(int v) {
 
-        if (v == n) answer++;
+        if (v == n) {
+            answer++;
+        }
         else {
-            for (int nv : graph.get(v)) {
+            ArrayList<Integer> arrayList = graph.get(v);
+            for (int nv : arrayList) {
                 int checked = ch[nv];
                 if (checked == 0) {
                     ch[nv] = 1;
