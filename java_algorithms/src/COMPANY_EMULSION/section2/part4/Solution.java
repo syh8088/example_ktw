@@ -3,6 +3,7 @@ package COMPANY_EMULSION.section2.part4;
 import java.util.*;
 
 class Solution {
+
     public int[] solution2(int c, int r, int k) {
 
         int[] answer = new int[2];
@@ -15,15 +16,17 @@ class Solution {
 
 
 
+
+        
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(Arrays.toString(T.solution(6, 5, 12)));
-        System.out.println(Arrays.toString(T.solution(6, 5, 20)));
-        System.out.println(Arrays.toString(T.solution(6, 5, 30)));
-        System.out.println(Arrays.toString(T.solution(6, 5, 31)));
+        System.out.println(Arrays.toString(T.solution2(6, 5, 12)));
+        System.out.println(Arrays.toString(T.solution2(6, 5, 20)));
+        System.out.println(Arrays.toString(T.solution2(6, 5, 30)));
+        System.out.println(Arrays.toString(T.solution2(6, 5, 31)));
     }
 
 
@@ -63,6 +66,7 @@ class Solution {
 
         answer[0] = x + 1;
         answer[1] = y + 1;
+
         return answer;
     }
 

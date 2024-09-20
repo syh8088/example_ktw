@@ -8,7 +8,7 @@ class Solution {
 
         int[] answer = new int[2];
 
-        if(k > c * r) {
+        if (k > c * r) {
             return new int[] {0, 0};
         }
 
