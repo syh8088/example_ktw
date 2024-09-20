@@ -8,6 +8,11 @@ class Solution {
 
         int[] answer = new int[5];
 
+        
+
+
+
+
 
 
         return answer;
@@ -15,11 +20,50 @@ class Solution {
 
     public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(Arrays.toString(T.solution("aaabc")));
-        System.out.println(Arrays.toString(T.solution("aabb")));
-        System.out.println(Arrays.toString(T.solution("abcde")));
-        System.out.println(Arrays.toString(T.solution("abcdeabc")));
-        System.out.println(Arrays.toString(T.solution("abbccddee")));
+        System.out.println(Arrays.toString(T.solution2("aaabc")));
+        System.out.println(Arrays.toString(T.solution2("aabb")));
+        System.out.println(Arrays.toString(T.solution2("abcde")));
+        System.out.println(Arrays.toString(T.solution2("abcdeabc")));
+        System.out.println(Arrays.toString(T.solution2("abbccddee")));
+    }
+
+    /**
+     * 내가 풀어보기
+     */
+    public int[] solution7(String s) {
+
+        int[] answer = new int[5];
+
+        char[] charArray = s.toCharArray();
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (char c : charArray) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+
+        int maxCount = 0;
+        for (char c : map.keySet()) {
+            int count = map.get(c);
+            if (count > maxCount) {
+                maxCount = count;
+            }
+        }
+
+        char[] array = new char[] {'a', 'b', 'c', 'd', 'e'};
+        int i = 0;
+        for (char c : array) {
+            if (!map.containsKey(c)) {
+                answer[i] = maxCount;
+            }
+            else {
+                int count = map.get(c);
+                answer[i] = maxCount - count;
+            }
+
+
+            i++;
+        }
+
+        return answer;
     }
 
     /**
