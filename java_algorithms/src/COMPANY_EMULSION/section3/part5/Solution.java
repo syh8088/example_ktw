@@ -9,12 +9,17 @@ class Solution {
         String answer = " ";
 
 
+
+
+
+
+
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(T.solution(new String[]{
+        System.out.println(T.solution2(new String[] {
                 "john tom",
                 "daniel luis",
                 "john luis",
@@ -22,9 +27,9 @@ class Solution {
                 "daniel tom",
                 "luis john"
         }, 2));
-        System.out.println(T.solution(new String[]{"john tom", "park luis", "john luis", "luis tom", "park tom", "luis john", "luis park", "park john", "john park", "tom john", "tom park", "tom luis"}, 2));
-        System.out.println(T.solution(new String[]{"cody tom", "john tom", "cody luis", "daniel luis", "john luis", "luis tom", "daniel tom", "luis john"}, 2));
-        System.out.println(T.solution(new String[]{"bob tom", "bob park", "park bob", "luis park", "daniel luis", "luis bob", "park luis", "tom bob", "tom luis", "john park", "park john"}, 3));
+        System.out.println(T.solution2(new String[]{"john tom", "park luis", "john luis", "luis tom", "park tom", "luis john", "luis park", "park john", "john park", "tom john", "tom park", "tom luis"}, 2));
+        System.out.println(T.solution2(new String[]{"cody tom", "john tom", "cody luis", "daniel luis", "john luis", "luis tom", "daniel tom", "luis john"}, 2));
+        System.out.println(T.solution2(new String[]{"bob tom", "bob park", "park bob", "luis park", "daniel luis", "luis bob", "park luis", "tom bob", "tom luis", "john park", "park john"}, 3));
     }
 
     /**
@@ -32,43 +37,46 @@ class Solution {
      */
     public String solution(String[] votes, int k) {
 
-        String answer = " ";
+        String answer;
         HashMap<String, List<String>> map = new HashMap<>();
-        for (String vote : votes) {
-            String[] str = vote.split(" ");
-            String s1 = str[0];
-            String s2 = str[1];
+        for (int i = 0; i < votes.length; i++) {
+            String vote = votes[i];
+            String[] split = vote.split(" ");
 
-            if (!map.containsKey(s2)) {
-                List<String> array = new ArrayList<>();
-                array.add(s1);
-                map.put(s2, array);
+            if (map.containsKey(split[1])) {
+                List<String> list = map.get(split[1]);
+                list.add(split[0]);
+                map.put(split[1], list);
             }
             else {
-                List<String> orDefault = map.get(s2);
-                orDefault.add(s1);
+                List<String> list = new ArrayList<>();
+                list.add(split[0]);
+                map.put(split[1], list);
             }
+
         }
 
-        HashMap<String, Integer> result = new HashMap<>();
+        HashMap<String, Integer> map1 = new HashMap<>();
+        int max = Integer.MIN_VALUE;
         for (String key : map.keySet()) {
             List<String> list = map.get(key);
             if (list.size() >= k) {
-                for (String value : list) {
-                    result.put(value, result.getOrDefault(value, 0) + 1);
+                for (String vote : list) {
+                    int count = map1.getOrDefault(vote, 0) + 1;
+                    max = Math.max(max, count);
+                    map1.put(vote, count);
                 }
             }
         }
 
-        int max = 0;
-        for (String key : result.keySet()) {
-            int target = result.get(key);
-            if (target > max) {
-                max = target;
-                answer = key;
+        ArrayList<String> tmp = new ArrayList<>();
+        for (String name : map1.keySet()) {
+            if (map1.get(name) == max) {
+                tmp.add(name);
             }
         }
 
-        return answer;
+        tmp.sort((a, b) -> a.compareTo(b));
+        answer = tmp.get(0);
     }
 }
