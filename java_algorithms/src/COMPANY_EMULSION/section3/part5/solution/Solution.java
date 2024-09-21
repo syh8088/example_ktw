@@ -7,24 +7,24 @@ class Solution {
     public String solution(String[] votes, int k) {
         String answer = " ";
         HashMap<String, HashSet<String>> voteHash = new HashMap<>();
-        HashMap<String, Integer> candidate = new HashMap<>();
-        HashMap<String, Integer> present = new HashMap<>();
+        HashMap<String, Integer> candidate = new HashMap<>(); // Key (추천 받은 사람) 가 몇 번 추천 받았는가
+        HashMap<String, Integer> present = new HashMap<>(); // Key (추천 한 사람) 가
 
         for (String x : votes) {
 
             String a = x.split(" ")[0]; // 추천을 한 사람
             String b = x.split(" ")[1]; // 추천을 받을 사람
 
-            voteHash.putIfAbsent(a, new HashSet<>());
+            voteHash.putIfAbsent(a, new HashSet<>()); // voteHash 해쉬가 'a' 이라는 key 가 작동 하지 않을때 작동함
             voteHash.get(a).add(b);
             candidate.put(b, candidate.getOrDefault(b, 0) + 1);
         }
 
         int max = Integer.MIN_VALUE;
         for (String key : voteHash.keySet()) {
-            int cnt = 0;
-            for (String target : voteHash.get(key)) {
-                if (candidate.get(target) >= k) {
+            int cnt = 0; // 선물을 받는 횟수
+            for (String b : voteHash.get(key)) {
+                if (candidate.get(b) >= k) {
                     cnt++;
                 }
             }
