@@ -3,6 +3,7 @@ package COMPANY_EMULSION.section3.part4.solution;
 import java.util.*;
 
 class Solution {
+
     public int solution(int[] nums, int m) {
 
         int answer = 0;
@@ -24,7 +25,7 @@ class Solution {
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
         System.out.println(T.solution(new int[]{2, 2, 3, -1, -1, -1, 3, 1, 1}, 5));
         System.out.println(T.solution(new int[]{1, 2, 3, -3, 1, 2, 2, -3}, 5));
