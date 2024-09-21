@@ -8,6 +8,12 @@ public class Main {
 
         int answer = 0;
 
+
+
+
+        
+
+
         return answer;
     }
 
@@ -35,6 +41,7 @@ public class Main {
     }
 
     public int solution(int n, int m, int[] arr) {
+
         int answer = 0;
         int lt = 0;
         int sum = 0;
