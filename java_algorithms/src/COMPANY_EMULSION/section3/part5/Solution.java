@@ -78,5 +78,7 @@ class Solution {
 
         tmp.sort((a, b) -> a.compareTo(b));
         answer = tmp.get(0);
+
+        return answer;
     }
 }
