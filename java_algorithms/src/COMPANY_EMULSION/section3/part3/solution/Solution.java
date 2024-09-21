@@ -24,6 +24,7 @@ class Solution {
             if (map.get(key) == 0) {
                 continue;
             }
+
             ch.add(map.get(key));
         }
 

@@ -11,16 +11,18 @@ class Solution {
 
 
 
+        
+
         return answer;
     }
 
     public static void main(String[] args){
         Solution T = new Solution();
-        System.out.println(T.solution("aaabbbcc"));
-        System.out.println(T.solution("aaabbc"));
-        System.out.println(T.solution("aebbbbc"));
-        System.out.println(T.solution("aaabbbcccde"));
-        System.out.println(T.solution("aaabbbcccdddeeeeeff"));
+        System.out.println(T.solution2("aaabbbcc"));
+        System.out.println(T.solution2("aaabbc"));
+        System.out.println(T.solution2("aebbbbc"));
+        System.out.println(T.solution2("aaabbbcccde"));
+        System.out.println(T.solution2("aaabbbcccdddeeeeeff"));
     }
 
     public int solution(String s) {
