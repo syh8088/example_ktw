@@ -14,7 +14,6 @@ class Solution {
 
         int[] answer = new int[n];
         for (int t = 0, i = 0, cnt = 0; ; t++) {
-
             if (enter.isEmpty() && exit.isEmpty() && i < n) {
                 if (t < arrival[i]) {
                     t = arrival[i];
@@ -44,12 +43,14 @@ class Solution {
                     answer[enter.poll()] = t;
                     prev = 0;
                 }
-            } else if(prev == 0) {
+            }
+            else if(prev == 0) {
 
                 if (!enter.isEmpty()) {
                     answer[enter.poll()] = t;
                     prev = 0;
-                } else {
+                }
+                else {
                     answer[exit.poll()] = t;
                     prev = 1;
                 }
@@ -61,12 +62,16 @@ class Solution {
                 break;
             }
         }
+
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(Arrays.toString(T.solution(new int[]{0, 1, 1, 1, 2, 3, 8, 8}, new int[]{1, 0, 0, 1, 0, 0, 1, 0})));
+        System.out.println(Arrays.toString(T.solution(
+                new int[]{0, 1, 1, 1, 2, 3, 8, 8},
+                new int[]{1, 0, 0, 1, 0, 0, 1, 0}
+        )));
         System.out.println(Arrays.toString(T.solution(new int[]{3, 3, 4, 5, 5, 5}, new int[]{1, 0, 1, 0, 1, 0})));
         System.out.println(Arrays.toString(T.solution(new int[]{2, 2, 2, 3, 4, 8, 8, 9, 10, 10}, new int[]{1, 0, 0, 0, 1, 1, 0, 1, 1, 0})));
     }

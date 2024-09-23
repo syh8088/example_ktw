@@ -28,26 +28,29 @@ class Solution {
             inList[i][1] = b;
         }
 
-        Queue<Integer> Q = new LinkedList<>();
-        Q.offer(inList[0][1]);
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(inList[0][1]);
         int fT = inList[0][0];
         int pos = 1;
 
         for (int t = fT; t <= 1200; t++) {
-            if (pos < n && t == inList[pos][0]) {
-                if (Q.isEmpty() && inList[pos][0] > fT) {
-                    fT= inList[pos][0];
+            if (pos < n) {
+                int target = inList[pos][0];
+                if (t == target) {
+                    if (queue.isEmpty() && target > fT) {
+                        fT = target;
+                    }
+                    queue.offer(inList[pos][1]);
+                    pos++;
                 }
-                Q.offer(inList[pos][1]);
-                pos++;
             }
 
-            if (t == fT && !Q.isEmpty()) {
-                int idx = Q.poll();
+            if (t == fT && !queue.isEmpty()) {
+                int idx = queue.poll();
                 fT += laser[idx];
             }
 
-            answer = Math.max(answer, Q.size());
+            answer = Math.max(answer, queue.size());
         }
 
         return answer;

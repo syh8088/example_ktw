@@ -10,14 +10,15 @@ class Solution {
 
 
 
+
         return answer;
     }
 
     public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(Arrays.toString(T.solution(new int[]{5, 6, 7, 8, 9})));
-        System.out.println(Arrays.toString(T.solution(new int[]{5, 4, 3, 2, 1})));
-        System.out.println(Arrays.toString(T.solution(new int[]{12, 5, 7, 23, 45, 21, 17})));
+        System.out.println(Arrays.toString(T.solution2(new int[]{5, 6, 7, 8, 9})));
+        System.out.println(Arrays.toString(T.solution2(new int[]{5, 4, 3, 2, 1})));
+        System.out.println(Arrays.toString(T.solution2(new int[]{12, 5, 7, 23, 45, 21, 17})));
     }
 
 
@@ -29,48 +30,31 @@ class Solution {
 
         int[] answer = new int[nums.length];
 
-        List<Point> points = new ArrayList<>();
+        LinkedList<int[]> list = new LinkedList<>();
         for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];
-            String binaryString = Integer.toBinaryString(num);
-            char[] charArray = binaryString.toCharArray();
+            int target = nums[i];
+            String binary = Integer.toBinaryString(target);
 
             int count = 0;
-            for (char c : charArray) {
-                if (c == 49) {
+            for (int j = binary.length() - 1; j >= 0; j--) {
+                if (binary.charAt(j) == '1') {
                     count++;
                 }
             }
-            points.add(new Point(num, count));
+            list.add(new int[]{count, target});
         }
+        list.sort((a, b) -> {
+            if (a[0] == b[0]) {
+                return a[1] - b[1];
+            }
+            return a[0] - b[0];
+        });
 
-        Collections.sort(points);
-
-        int i = 0;
-        for (Point point : points) {
-            answer[i] = point.num;
-            i++;
+        for (int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i)[1];
         }
 
         return answer;
     }
 
-    class Point implements Comparable<Point> {
-
-        int num;
-        int count;
-
-        public Point(int num, int count) {
-            this.num = num;
-            this.count = count;
-        }
-
-        @Override
-        public int compareTo(Point o) {
-            if (this.count == o.count) {
-                return this.num - o.num;
-            }
-            return this.count - o.count;
-        }
-    }
 }
