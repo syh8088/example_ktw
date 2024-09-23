@@ -7,7 +7,7 @@ class Solution {
     public int solution(int n, int[] nums) {
 
         int answer = 0;
-        int[][] line = new int[nums.length + 1][2];
+        int[][] line = new int[nums.length][2];
 
         for (int i = 0; i <= n; i++) {
             line[i][0] = Math.max(0, i - nums[i]);
