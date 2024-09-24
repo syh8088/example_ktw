@@ -54,7 +54,7 @@ class Solution {
 
     public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(T.solution(new int[][]{
+        System.out.println(T.solution(new int[][] {
                 {87, 84},
                 {66, 78},
                 {94, 94},
