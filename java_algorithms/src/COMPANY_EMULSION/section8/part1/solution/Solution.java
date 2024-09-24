@@ -6,8 +6,39 @@ class Solution {
 
     public int solution(int[] nums) {
 
+        int n = nums.length;
+        int[] ch = new int[n];
 
+        Queue<Integer> queue = new LinkedList<>();
+        queue.offer(0);
 
+        ch[0] = 1;
+        int L = 0;
+
+        while (!queue.isEmpty()) {
+            int len = queue.size();
+
+            for (int i = 0; i < len; i++) {
+                int targetIndex = queue.poll();
+
+                int num = nums[targetIndex];
+                for (int j = 1; j <= num; j++) {
+
+                    int nx = targetIndex + j;
+
+                    if (nx == n - 1) {
+                        return L + 1;
+                    }
+
+                    if (nx < n && ch[nx] == 0) {
+                        ch[nx] = 1;
+                        queue.offer(nx);
+                    }
+                }
+            }
+
+            L++;
+        }
 
         return -1;
     }
