@@ -28,14 +28,13 @@ class CourseSlug implements Comparable<CourseSlug> {
 public class Main {
 
     public int solution2(int n, ArrayList<CourseSlug> arr) {
+
         int cnt = 0;
 
 
+
+
         
-
-
-
-
         return cnt;
     }
 
@@ -51,7 +50,7 @@ public class Main {
 //        for (int i = 0; i < n; i++) {
 //            int start = kb.nextInt();
 //            int end = kb.nextInt();
-//            arr.add(new Body(start, end));
+//            arr.add(new CourseSlug(start, end));
 //        }
 
         arr.add(new CourseSlug(1, 4));
