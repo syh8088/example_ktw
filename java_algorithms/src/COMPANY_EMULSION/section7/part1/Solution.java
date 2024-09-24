@@ -4,21 +4,21 @@ import java.util.*;
 
 class Solution {
 
+
+    
     public int solution(int n) {
 
-        int answer = 0;
 
 
 
 
 
 
-        return answer;
-    }
-
-    public void DFS(int L, char[] pm, char[] charArray) {
 
 
+
+
+        return 0;
     }
 
     public static void main(String[] args) {
