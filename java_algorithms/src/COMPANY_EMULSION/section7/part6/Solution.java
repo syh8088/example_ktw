@@ -7,13 +7,11 @@ class Solution {
     public int solution(String s) {
 
         int answer = 0;
-        char[] charArray = s.toCharArray();
-        for (char c : charArray) {
 
-            System.out.println("c = " + c);
 
-        }
 
+
+        
 
         return answer;
     }
