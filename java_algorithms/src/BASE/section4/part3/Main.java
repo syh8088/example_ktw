@@ -8,6 +8,12 @@ public class Main {
 
         int answer = 0;
 
+        
+
+
+
+
+
         return answer;
     }
 
@@ -24,7 +30,7 @@ public class Main {
 //            arr[i] = kb.nextInt();
 //        }
 //
-//        System.out.print(T.solution3(n, k, arr));
+//        System.out.print(T.solution2(n, k, arr));
 
         System.out.print(T.solution2(
                 10,
@@ -35,13 +41,16 @@ public class Main {
     }
 
     public int solution3(int n, int k, int[] arr) {
+
         int answer = 0;
         int sum = 0;
 
         for (int i = 0; i < k; i++) {
             sum += arr[i];
         }
+
         answer = sum;
+
         for (int i = k; i < n; i++) {
             sum += arr[i] - arr[i - k];
             answer = Math.max(answer, sum);
