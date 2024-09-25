@@ -4,24 +4,30 @@ import java.util.*;
 
 class Solution {
 
+    int answer;
+    int L;
+
     public int solution2(int s, int e) {
 
-        int answer = 0;
+        answer = 0;
+        L = 0;
 
 
 
 
-        return answer;
+        
+
+        return -1;
     }
 
     public static void main(String[] args) {
 
         Solution T = new Solution();
-        System.out.println(T.solution(1, 11));
-        System.out.println(T.solution(10, 3));
-        System.out.println(T.solution(1, 34567));
-        System.out.println(T.solution(5, 6));
-        System.out.println(T.solution(2, 54321));
+        System.out.println(T.solution2(1, 11));
+        System.out.println(T.solution2(10, 3));
+        System.out.println(T.solution2(1, 34567));
+        System.out.println(T.solution2(5, 6));
+        System.out.println(T.solution2(2, 54321));
     }
 
 

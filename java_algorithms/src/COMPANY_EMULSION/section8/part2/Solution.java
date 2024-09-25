@@ -5,7 +5,7 @@ import java.util.*;
 class Solution {
 
     int answer;
-    
+
 
     public int solution2(int[] pool, int a, int b, int home) {
 
