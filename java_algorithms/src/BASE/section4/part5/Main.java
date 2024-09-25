@@ -5,7 +5,14 @@ import java.util.Scanner;
 public class Main {
 
     public int solution2(int n) {
+
         int answer = 0;
+
+
+        
+
+
+
 
 
         return answer;
@@ -37,13 +44,21 @@ public class Main {
         }
 
         for (int rt = 0; rt < m; rt++) {
+
             sum += arr[rt];
 
-            if (sum == n) answer++;
+            if (sum == n) {
+                answer++;
+            }
+
             while (sum >= n) {
+
                 sum -= arr[lt];
                 lt++;
-                if (sum == n) answer++;
+
+                if (sum == n) {
+                    answer++;
+                }
             }
         }
         
