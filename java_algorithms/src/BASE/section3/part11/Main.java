@@ -5,17 +5,13 @@ import java.util.Scanner;
 public class Main {
 
     public int solution5(int n, int[][] arr) {
+
         int answer = 0;
 
 
 
 
-
-
-
-
-
-
+        
 
 
         return answer;
@@ -34,8 +30,9 @@ public class Main {
 //                arr[i][j] = kb.nextInt();
 //            }
 //        }
+//        System.out.print(T.solution5(n, arr));
 
-        System.out.print(T.solution5(5, new int[][] {
+        System.out.print(T.solution2(5, new int[][] {
                 { 0, 0, 0, 0, 0, 0 },
                 { 0, 2, 3, 1, 7, 3 },
                 { 0, 4, 1, 9, 6, 8 },
@@ -45,6 +42,9 @@ public class Main {
         }));
     }
 
+    /**
+     * 정답
+     */
     public int solution2(int n, int[][] arr) {
 
         int answer = 0;
@@ -73,11 +73,7 @@ public class Main {
                 max = cnt;
                 answer = i;
             }
-
-
-            answer = Math.max(answer, cnt);
         }
-
 
         return answer;
     }
