@@ -25,30 +25,12 @@ class Main {
     static ArrayList<ArrayList<Edge>> graph;
     static int[] dis;
 
-    public void solution(int v) {
+    public void solution2(int v) {
 
-        PriorityQueue<Edge> queue = new PriorityQueue<>();
-        queue.offer(new Edge(v, 0));
-        dis[v] = 0;
 
-        while (!queue.isEmpty()) {
-            Edge tmp = queue.poll();
-            int now = tmp.vex;
-            int nowCost = tmp.cost;
-            if (nowCost > dis[now]) {
-                continue;
-            }
 
-            for (Edge ob : graph.get(now)) {
 
-                int vex = ob.vex;
-                int target = nowCost + ob.cost;
-                if (dis[vex] > target) {
-                    dis[vex] = target;
-                    queue.offer(new Edge(vex, target));
-                }
-            }
-        }
+
     }
 
     public static void main(String[] args) {
@@ -87,7 +69,7 @@ class Main {
         graph.get(4).add(new Edge(5, 5));
         graph.get(6).add(new Edge(4, 5));
 
-        T.solution(1);
+        T.solution2(1);
 
         for (int i = 2; i <= n; i++) {
             if (dis[i] != Integer.MAX_VALUE) {
@@ -95,6 +77,33 @@ class Main {
             }
             else {
                 System.out.println(i + " : impossible");
+            }
+        }
+    }
+
+
+    public void solution(int v) {
+
+        PriorityQueue<Edge> queue = new PriorityQueue<>();
+        queue.offer(new Edge(v, 0));
+        dis[v] = 0;
+
+        while (!queue.isEmpty()) {
+            Edge edge = queue.poll();
+            int now = edge.vex;
+            int nowCost = edge.cost;
+            if (nowCost > dis[now]) {
+                continue;
+            }
+
+            for (Edge ob : graph.get(now)) {
+
+                int vex = ob.vex;
+                int target = nowCost + ob.cost;
+                if (dis[vex] > target) {
+                    dis[vex] = target;
+                    queue.offer(new Edge(vex, target));
+                }
             }
         }
     }
