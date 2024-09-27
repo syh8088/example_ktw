@@ -104,7 +104,22 @@ class Main {
         }
     }
 
+    // 연습 해보기.....
+    public static void DFS6(int L, int s) {
 
+        if (L == m) {
+
+        }
+        else {
+
+            for (int i = s; i < pzLen; i++) {
+
+            }
+
+        }
+
+
+    }
 
     static class Point {
 
