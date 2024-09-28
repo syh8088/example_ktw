@@ -12,17 +12,17 @@ class Solution {
 
 
 
-
+        
 
         return answer;
     }
 
     public static void main(String[] args) {
         Solution T = new Solution();
-//        System.out.println(T.solution2(new int[]{2, 2, 3, -1, -1, -1, 3, 1, 1}, 5));
-//        System.out.println(T.solution2(new int[]{1, 2, 3, -3, 1, 2, 2, -3}, 5));
-//        System.out.println(T.solution2(new int[]{1, 2, 3, -3, 1, 2}, 3));
-//        System.out.println(T.solution2(new int[]{-1, 0, 1}, 0));
+        System.out.println(T.solution2(new int[]{2, 2, 3, -1, -1, -1, 3, 1, 1}, 5));
+        System.out.println(T.solution2(new int[]{1, 2, 3, -3, 1, 2, 2, -3}, 5));
+        System.out.println(T.solution2(new int[]{1, 2, 3, -3, 1, 2}, 3));
+        System.out.println(T.solution2(new int[]{-1, 0, 1}, 0));
         System.out.println(T.solution2(new int[]{-1, -1, -1, 1}, 0));
     }
 
