@@ -11,6 +11,7 @@ class Solution {
 
 
 
+        
 
 
         return answer;
@@ -18,8 +19,8 @@ class Solution {
 
     public static void main(String[] args){
         Solution T = new Solution();
-        System.out.println(T.solution2("aaabbbcc"));
-        System.out.println(T.solution2("aaabbc"));
+//        System.out.println(T.solution2("aaabbbcc"));
+//        System.out.println(T.solution2("aaabbc"));
         System.out.println(T.solution2("aebbbbc"));
         System.out.println(T.solution2("aaabbbcccde"));
         System.out.println(T.solution2("aaabbbcccdddeeeeeff"));
