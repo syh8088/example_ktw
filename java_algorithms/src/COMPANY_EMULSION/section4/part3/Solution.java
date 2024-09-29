@@ -4,71 +4,20 @@ import java.util.*;
 
 class Solution {
 
-    class Point implements Comparable<Point> {
-
-        int index;
-        int arrival;
-        int state;
-
-        Point(int index, int arrival, int state) {
-            this.index = index;
-            this.arrival = arrival;
-            this.state = state;
-        }
-
-        @Override
-        public int compareTo(Point o) {
-
-            if (this.state == o.state) {
-                return this.index - o.index;
-            }
-            return o.state - this.state;
-        }
-    }
-
 
     public int[] solution(int[] arrival, int[] state) {
 
-        int[] answer = {};
-        HashMap<Integer, ArrayList<Point>> map = new HashMap<>();
-        for (int i = 0; i < arrival.length; i++) {
-            int i1 = arrival[i];
-            int i2 = state[i];
-
-            Point point = new Point(i, i1, i2);
-            map.putIfAbsent(i1, new ArrayList<>());
-            map.get(i1).add(point);
-
-        }
-
-        int length = arrival.length;
-        List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < length; i++) {
-           if (map.containsKey(i)) {
-               ArrayList<Point> points = map.get(i);
-               PriorityQueue<Point> priorityQueue = new PriorityQueue<>();
-               for (int j = 0; j < points.size(); j++) {
-                   Point point = points.get(j);
-                   priorityQueue.offer(point);
-               }
-
-               while (!priorityQueue.isEmpty()) {
-                   Point point = priorityQueue.poll();
-                   int index = point.index;
-                   result.add(index);
-               }
-           }
 
 
-        }
 
 
-        return answer;
+
+        return null;
     }
 
     public static void main(String[] args){
         Solution T = new Solution();
-        System.out.println(Arrays.toString(T.solution3(
+        System.out.println(Arrays.toString(T.solution(
                 new int[]{0, 1, 1, 1, 2, 3, 8, 8},
                 new int[]{1, 0, 0, 1, 0, 0, 1, 0}
         )));
