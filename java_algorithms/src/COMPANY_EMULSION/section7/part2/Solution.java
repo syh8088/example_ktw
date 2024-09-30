@@ -6,6 +6,7 @@ class Solution {
 
     int answer;
 
+    
     public int solution(int[][] fight) {
 
         answer = 0;
