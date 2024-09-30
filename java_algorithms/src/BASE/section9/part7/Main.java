@@ -6,14 +6,6 @@ class Main {
 
     int[][] dy = new int[35][35];
 
-    public int DFS2(int n, int r) {
-
-
-
-
-        return 0;
-    }
-
     public static void main(String[] args){
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
@@ -41,4 +33,14 @@ class Main {
         }
     }
 
+    /**
+     * 연습해보기
+     */
+    public int DFS2(int n, int r) {
+
+
+
+
+        return 0;
+    }
 }
