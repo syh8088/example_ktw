@@ -1,7 +1,8 @@
 package BASE.section9.part6;
 
 import java.util.*;
-class Main{
+
+class Main {
 
     static int[] pm, ch, arr;
     static int n, m;
@@ -12,8 +13,7 @@ class Main{
 
 
 
-
-
+        
     }
 
     public static void main(String[] args){
@@ -36,7 +36,7 @@ class Main{
         ch = new int[n];
         pm = new int[m];
 
-        T.DFS(0);
+        T.DFS2(0);
     }
 
     public void DFS(int L) {
