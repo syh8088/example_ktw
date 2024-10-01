@@ -4,6 +4,32 @@ import java.util.Scanner;
 
 public class Main {
 
+    public String solution2(int n, String str) {
+
+        String answer = "";
+
+
+
+
+
+        
+
+        return answer;
+    }
+
+    public static void main(String[] args) {
+
+        Main T = new Main();
+        Scanner kb = new Scanner(System.in);
+
+        System.out.print(T.solution2(4, "#****###**#####**#####**##**"));
+
+//        int n = kb.nextInt();
+//        String str = kb.next();
+//        System.out.print(T.solution(n, str));
+    }
+
+
     public String solution(int n, String str) {
 
         String answer = "";
@@ -22,17 +48,5 @@ public class Main {
 
 
         return answer;
-    }
-
-    public static void main(String[] args) {
-
-        Main T = new Main();
-        Scanner kb = new Scanner(System.in);
-
-        System.out.print(T.solution(4, "#****###**#####**#####**##**"));
-
-//        int n = kb.nextInt();
-//        String str = kb.next();
-//        System.out.print(T.solution(n, str));
     }
 }
