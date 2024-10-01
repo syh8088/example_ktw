@@ -14,19 +14,22 @@ public class Main {
 
 
 
-
-
-
-
         return answer;
     }
 
     public static void main(String[] args) {
 
         Main T = new Main();
-//        Scanner kb = new Scanner(System.in);
+        Scanner kb = new Scanner(System.in);
 //        String str = kb.next();
-        System.out.print(T.solution2("teachermode", 'e'));
+//        char t = kb.next().charAt(0);
+
+        String str = "teachermode";
+        char t = 'e';
+
+        for (int x : T.solution2(str, t)) {
+            System.out.print(x + " ");
+        }
     }
 
 
