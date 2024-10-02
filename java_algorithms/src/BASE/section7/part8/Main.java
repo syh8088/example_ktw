@@ -6,10 +6,14 @@ import java.util.Scanner;
 public class Main {
 
     public int solution2(int m, int[] arr) {
+
         int answer = 0;
 
 
 
+
+
+        
         return answer;
     }
 
