@@ -7,11 +7,6 @@ public class Main {
     public int[] solution2(int n, int[] arr) {
 
 
-
-
-
-
-
         return null;
     }
 
@@ -40,22 +35,21 @@ public class Main {
         }
     }
 
-    public int[] solution(int n, int[] target) {
+    public int[] solution(int n, int[] arr) {
 
         int[] answer = new int[n];
 
         for (int i = 0; i < n; i++) {
 
-            int cnt = n;
-
-            int i1 = target[i];
+            int cnt = 1;
+            int itarget = arr[i];
             for (int j = 0; j < n; j++) {
-                int j1 = target[j];
-
-                if (i1 > j1) {
-                    cnt--;
+                if (i != j) {
+                    int jtarget = arr[j];
+                    if (itarget < jtarget) {
+                        cnt++;
+                    }
                 }
-
             }
             answer[i] = cnt;
         }
