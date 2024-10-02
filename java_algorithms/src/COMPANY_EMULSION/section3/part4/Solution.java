@@ -12,8 +12,7 @@ class Solution {
 
 
 
-
-
+        
         return answer;
     }
 
@@ -35,12 +34,12 @@ class Solution {
 
         for (int i = 0; i < nums.length; i++) {
 
-            int target = nums[i];
-            sum += target;
-            int i1 = sum - m;
+            int num = nums[i];
+            sum += num;
+            int target = sum - m;
 
-            if (map.containsKey(i1)) {
-                int i2 = map.get(i1);
+            if (map.containsKey(target)) {
+                int i2 = map.get(target);
                 answer += i2;
             }
 
