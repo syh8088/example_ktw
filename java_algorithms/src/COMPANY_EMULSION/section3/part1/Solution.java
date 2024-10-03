@@ -1,6 +1,8 @@
 package COMPANY_EMULSION.section3.part1;
 
 
+import java.util.HashMap;
+
 class Solution {
 
     public int solution2(String s) {
@@ -9,10 +11,7 @@ class Solution {
 
 
 
-
-
-
-
+        
 
         return answer;
     }
