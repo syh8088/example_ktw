@@ -4,23 +4,11 @@ import java.util.*;
 
 class Solution {
 
-    
     public int solution2(int[] nums) {
 
-        int answer = 0;
 
 
-
-
-
-
-
-        return answer;
-    }
-
-    public int BFS2(int[] nums) {
-
-
+        
 
 
 
