@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Main {
 
-
     public int solution2(int n, int c, int[] arr) {
 
         int answer = 0;
