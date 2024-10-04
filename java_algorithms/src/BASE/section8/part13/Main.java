@@ -13,6 +13,12 @@ public class Main {
 
     public void DFS2(int v) {
 
+        
+
+
+
+
+
 
     }
 
@@ -50,7 +56,7 @@ public class Main {
         graph.get(4).add(5);
 
         ch[1] = 1;
-        T.DFS(1);
+        T.DFS2(1);
         System.out.println(answer);
     }
 
@@ -66,7 +72,7 @@ public class Main {
                 if (checked == 0) {
                     ch[nv] = 1;
                     DFS(nv);
-                    ch[v] = 0;
+                    ch[nv] = 0;
                 }
             }
         }
