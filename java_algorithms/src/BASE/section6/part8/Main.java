@@ -25,9 +25,7 @@ public class Main {
 
 
 
-
-
-
+        
 
         return answer;
     }
@@ -48,7 +46,7 @@ public class Main {
 //        System.out.print(T.solution(n, m, arr));
 
         System.out.print(T.solution2(5, 2, new int[]{ 60, 50, 70, 80, 90 }));
-//        System.out.print(T.solution2(6, 3, new int[]{ 70, 60, 90, 60, 60, 60 }));
+        System.out.print(T.solution2(6, 3, new int[]{ 70, 60, 90, 60, 60, 60 }));
     }
 
     /**
@@ -57,16 +55,16 @@ public class Main {
     public int solution(int n, int m, int[] arr) {
 
         int answer = 1;
-        Queue<Person> Q = new LinkedList<>();
+        Queue<Person> queue = new LinkedList<>();
         for (int i = 0; i < n; i++) {
-            Q.offer(new Person(i, arr[i]));
+            queue.offer(new Person(i, arr[i]));
         }
 
-        while (!Q.isEmpty()) {
-            Person temp = Q.poll();
-            for (Person x : Q) {
+        while (!queue.isEmpty()) {
+            Person temp = queue.poll();
+            for (Person x : queue) {
                 if (x.priority > temp.priority) {
-                    Q.offer(temp);
+                    queue.offer(temp);
                     temp = null;
                     break;
                 }
