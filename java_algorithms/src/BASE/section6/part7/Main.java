@@ -11,6 +11,10 @@ public class Main {
 
         String answer = "YES";
 
+
+
+        
+
         return answer;
     }
 
@@ -20,11 +24,11 @@ public class Main {
         Main T = new Main();
         Scanner kb = new Scanner(System.in);
 
-        String a = kb.next();
-        String b = kb.next();
-        System.out.print(T.solution(a, b));
+//        String a = kb.next();
+//        String b = kb.next();
+//        System.out.print(T.solution(a, b));
 
-//        System.out.print(T.solution2("CBA", "CBDAGE"));
+        System.out.print(T.solution2("CBA", "CBDAGE"));
     }
 
     /**
