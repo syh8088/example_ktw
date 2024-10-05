@@ -2,6 +2,9 @@ package BASE.section9.part6;
 
 import java.util.*;
 
+/**
+ * 순열 기본 문제
+ */
 class Main {
 
     static int[] pm, ch, arr;

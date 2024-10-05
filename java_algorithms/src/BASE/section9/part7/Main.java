@@ -2,6 +2,9 @@ package BASE.section9.part7;
 
 import java.util.Scanner;
 
+/**
+ * 조합 기본 문제
+ */
 class Main {
 
     int[][] dy = new int[35][35];
