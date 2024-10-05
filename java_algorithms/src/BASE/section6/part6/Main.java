@@ -12,6 +12,8 @@ public class Main {
 
 
 
+
+
         return answer;
     }
 
@@ -22,7 +24,7 @@ public class Main {
 
 //        int n = kb.nextInt();
 //        int k = kb.nextInt();
-//        System.out.print(T.solution(n, k));
+//        System.out.print(T.solution2(n, k));
 
         System.out.print(T.solution2(8, 3));
     }
@@ -44,8 +46,7 @@ public class Main {
             for (int i = 0; i < k; i++) {
                 if (i == k - 1) {
                     queue.poll();
-                }
-                else {
+                } else {
                     queue.offer(queue.poll());
                 }
             }
