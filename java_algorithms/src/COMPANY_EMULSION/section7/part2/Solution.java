@@ -6,18 +6,14 @@ class Solution {
 
     int answer;
 
-
     public int solution(int[][] fight) {
 
         answer = 0;
 
-
-
-
-
-
         return answer;
     }
+
+    
 
     public static void main(String[] args) {
         Solution T = new Solution();
