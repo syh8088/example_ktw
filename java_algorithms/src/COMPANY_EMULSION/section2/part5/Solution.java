@@ -11,11 +11,7 @@ class Solution {
 
 
 
-
-
-
-
-
+        
 
 
         return answer;
@@ -25,7 +21,6 @@ class Solution {
 
         Solution T = new Solution();
 
-//        System.out.println(T.solution2(new int[]{1, 2, 1, 2, 3, 2, 1}));
         System.out.println(T.solution2(new int[]{1, 3, 2, 5, 7, 4, 2, 5, 1}));
         System.out.println(T.solution2(new int[]{1, 1, 2, 3, 5, 7, 4, 3, 1, 2}));
         System.out.println(T.solution2(new int[]{3, 2, 1, 3, 2, 4, 6, 7, 3, 1}));
