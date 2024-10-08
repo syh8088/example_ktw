@@ -13,6 +13,8 @@ public class Main {
 
 
 
+        
+
         return answer;
     }
 
@@ -46,7 +48,9 @@ public class Main {
 
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
-
+//                System.out.println("i = " + i);
+//                System.out.println("j = " + j);
+//                System.out.println("\uD83E\uDDD1\uD83E\uDDD1\uD83E\uDDD1\uD83E\uDDD1\uD83E\uDDD1\uD83E\uDDD1");
                 int cnt = 0;
                 for (int k = 0; k < m; k++) {
                     int pi = 0;
@@ -54,8 +58,12 @@ public class Main {
                     System.out.println("vvvvvvvvvvvvvvvvvvvv");
                     for (int s = 0; s < n; s++) {
                         System.out.println("arr[k][s] = " + arr[k][s]);
-                        if (arr[k][s] == i) pi = s;
-                        if (arr[k][s] == j) pj = s;
+                        if (arr[k][s] == i) {
+                            pi = s;
+                        }
+                        if (arr[k][s] == j) {
+                            pj = s;
+                        }
                         System.out.println("=====================");
                     }
 
