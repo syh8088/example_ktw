@@ -56,7 +56,9 @@ class Solution {
                 y2 = ny2;
             }
 
-            if (x1 == x2 && y1 == y2) break;
+            if (x1 == x2 && y1 == y2) {
+                break;
+            }
         }
 
         if (count >= 10000) {
