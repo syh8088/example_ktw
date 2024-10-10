@@ -14,7 +14,7 @@ class Solution {
         int rest = tasks.length;
         for (int i = 1; i < sT.length; i++) {
 
-            long time = ((long) rest * (sT[i] - sT[i-1]));
+            long time = ((long) rest * (sT[i] - sT[i - 1]));
             if (k < time) {
 
                 long idx = k % rest;
@@ -31,7 +31,7 @@ class Solution {
                 }
             }
             else{
-                k -= time;
+                k = k - time;
                 rest--;
             }
         }
@@ -41,7 +41,7 @@ class Solution {
 
     public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(T.solution(new int[]{1, 2, 3}, 5));
+//        System.out.println(T.solution(new int[]{1, 2, 3}, 5));
         System.out.println(T.solution(new int[]{8, 5, 2, 9, 10, 7}, 30));
         System.out.println(T.solution(new int[]{8, 9, 12, 23, 45, 16, 25, 50}, 100));
     }
