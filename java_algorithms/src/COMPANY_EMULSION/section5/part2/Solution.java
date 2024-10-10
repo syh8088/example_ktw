@@ -8,9 +8,6 @@ class Solution {
 
         int[] answer = new int[nums.length / 2];
 
-
-
-
         
 
         return answer;
