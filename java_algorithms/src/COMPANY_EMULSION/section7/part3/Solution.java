@@ -5,13 +5,8 @@ import java.util.*;
 class Solution {
 
     int answer;
-    int n;
-    int m;
-    int ch[];
-
+    
     public int solution(int[][] cans) {
-
-
 
 
 
@@ -19,9 +14,6 @@ class Solution {
 
         return answer;
     }
-
-
-
 
     public static void main(String[] args) {
 
