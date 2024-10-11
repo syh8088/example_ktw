@@ -5,7 +5,7 @@ import java.util.*;
 class Solution {
 
     int answer;
-    
+
     public int solution(int[][] cans) {
 
 
