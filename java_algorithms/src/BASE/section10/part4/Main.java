@@ -28,9 +28,7 @@ public class Main {
 
 
 
-
-
-
+        
 
         return answer;
     }
@@ -47,7 +45,7 @@ public class Main {
 //        for (int i = 0; i < n; i++) {
 //            int money = kb.nextInt();
 //            int time = kb.nextInt();
-//            arr.add(new Time(money, time));
+//            arr.add(new Lecture(money, time));
 //        }
 
         max = 3;
