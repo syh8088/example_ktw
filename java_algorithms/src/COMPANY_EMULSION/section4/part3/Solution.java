@@ -7,16 +7,15 @@ class Solution {
 
     public int[] solution(int[] arrival, int[] state) {
 
+        int[] answer = new int[arrival.length];
 
 
 
 
 
+        
 
-
-
-
-        return null;
+        return answer;
     }
 
     public static void main(String[] args){
