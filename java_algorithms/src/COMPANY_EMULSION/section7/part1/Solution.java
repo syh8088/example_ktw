@@ -4,11 +4,7 @@ import java.util.*;
 
 class Solution {
 
-
     public int solution(int n) {
-
-
-
 
 
 
@@ -16,6 +12,7 @@ class Solution {
 
         return 0;
     }
+    
 
     public static void main(String[] args) {
         Solution T = new Solution();
