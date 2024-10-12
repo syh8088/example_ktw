@@ -4,12 +4,8 @@ import java.util.*;
 
 class Solution {
 
+
     public int solution2(int[] nums) {
-
-
-
-
-
 
 
         return -1;
