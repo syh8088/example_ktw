@@ -5,13 +5,10 @@ import java.util.*;
 class Solution {
 
     int answer;
-    int L;
 
     public int solution2(int s, int e) {
 
         answer = 0;
-        L = 0;
-
 
 
 
