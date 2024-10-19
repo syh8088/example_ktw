@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://www.acmicpc.net/problem/2164
  */
-class Solution {
+class Main {
 
     public int solution(int n) {
 
@@ -29,7 +29,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution T = new Solution();
+        Main T = new Main();
         System.out.println(T.solution(6));
     }
 }
