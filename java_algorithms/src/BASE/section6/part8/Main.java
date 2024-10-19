@@ -1,6 +1,7 @@
 package BASE.section6.part8;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -25,7 +26,7 @@ public class Main {
 
 
 
-
+        
 
 
         return answer;
