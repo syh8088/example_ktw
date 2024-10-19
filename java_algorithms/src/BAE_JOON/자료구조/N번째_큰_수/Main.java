@@ -12,6 +12,49 @@ class Main {
 
         int answer = 0;
 
+
+
+
+
+
+
+
+        return answer;
+    }
+
+    public static void main(String[] args) throws Exception {
+
+        Main T = new Main();
+
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+//        StringTokenizer st;
+//
+//        int n = Integer.parseInt(br.readLine());
+//        int[][] arr = new int[n][n];
+//
+//        for (int i = 0; i < n; i++) {
+//            st = new StringTokenizer(br.readLine());
+//            for (int j = 0; j < n; j++) {
+//                arr[i][j] = Integer.parseInt(st.nextToken());
+//            }
+//        }
+//        System.out.println(T.solution(n, arr));
+
+        System.out.print(T.solution(5, new int[][] {
+                { 12, 7, 9, 15, 5 },
+                { 13, 8, 11, 19, 6 },
+                { 21, 10, 26, 31, 16 },
+                { 48, 14, 28, 35, 25 },
+                { 52, 20, 32, 41, 49 }
+        }));
+    }
+
+    /**
+     * 내가 풀어보기
+     */
+    public int solution2(int n, int[][] arr) {
+
         int[] ints = arr[n - 1];
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         for (int i = 0; i < ints.length; i++) {
@@ -31,33 +74,5 @@ class Main {
 
 
         return queue.poll();
-    }
-
-    public static void main(String[] args) throws Exception {
-
-        Main T = new Main();
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st;
-
-        int n = Integer.parseInt(br.readLine());
-        int[][] arr = new int[n][n];
-
-        for (int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine());
-            for (int j = 0; j < n; j++) {
-                arr[i][j] = Integer.parseInt(st.nextToken());
-            }
-        }
-        System.out.println(T.solution(n, arr));
-
-//        System.out.print(T.solution(5, new int[][] {
-//                { 12, 7, 9, 15, 5 },
-//                { 13, 8, 11, 19, 6 },
-//                { 21, 10, 26, 31, 16 },
-//                { 48, 14, 28, 35, 25 },
-//                { 52, 20, 32, 41, 49 }
-//        }));
     }
 }
