@@ -12,7 +12,7 @@ class Main {
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        
+
 
 
         return list;
