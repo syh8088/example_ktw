@@ -13,9 +13,9 @@ class Main {
 
     static int[][] dfs;
     static int count;
-    int answer;
+    static int answer;
 
-    public void solution(int n, int[][] arr) throws IOException {
+    public static void solution(int n, int[][] arr) throws IOException {
 
         answer = 0;
         count = 0;
@@ -49,7 +49,7 @@ class Main {
         bw.close();
     }
 
-    public void DFS(int i, int j, int[][] arr) {
+    public static void DFS(int i, int j, int[][] arr) {
         for (int k = 0; k < 4; k++) {
             int x = i + dx[k];
             int y = j + dy[k];
@@ -67,8 +67,6 @@ class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Main T = new Main();
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
@@ -82,7 +80,7 @@ class Main {
                 arr[i][j] = str.charAt(j) - '0';
             }
         }
-        T.solution(n, arr);
+        solution(n, arr);
 
 //        T.solution(7, new int[][] {
 //                { 0, 1, 1, 0, 1, 0, 0 },
