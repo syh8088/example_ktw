@@ -13,9 +13,9 @@ class Main {
 
     public static void solution(int p, int m, int[] lArray, String[] nArray) {
 
+
+
         
-
-
 
 
 
@@ -57,11 +57,17 @@ class Main {
         }
 
         for (ArrayList<Player> room : rooms) {
-            if (room.size() == m) System.out.println("Started!");
-            else System.out.println("Waiting!");
+            if (room.size() == m) {
+                System.out.println("Started!");
+            }
+            else {
+                System.out.println("Waiting!");
+            }
 
             Collections.sort(room);
-            for (Player player : room) System.out.println(player.level + " " + player.name);
+            for (Player player : room) {
+                System.out.println(player.level + " " + player.name);
+            }
         }
     }
 
