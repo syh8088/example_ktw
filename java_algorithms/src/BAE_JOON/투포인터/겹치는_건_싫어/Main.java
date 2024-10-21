@@ -16,7 +16,16 @@ class Main {
         int answer = 0;
 
 
+        int[] result = new int[n];
+        for (int i = 0; i < n; i++) {
+            int target = arr[i];
 
+            while (target < n && result[target] != 0) {
+                target++;
+            }
+
+            result[target] = i + 1;
+        }
 
 
 
