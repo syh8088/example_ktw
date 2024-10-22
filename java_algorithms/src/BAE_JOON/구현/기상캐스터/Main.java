@@ -7,7 +7,7 @@ import java.util.*;
  * https://www.acmicpc.net/problem/10709
  *
  * 💥풀이
- *
+ * https://bono039.tistory.com/m/1254
  */
 class Main {
 
