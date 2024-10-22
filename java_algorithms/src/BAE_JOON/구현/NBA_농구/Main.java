@@ -11,7 +11,7 @@ import java.util.*;
  */
 class Main {
 
-    public static void solution2(int p, int m, int[] lArray, String[] nArray) {
+    public static void solution2(int n, ArrayList<Record> records) {
 
 
 
@@ -21,10 +21,34 @@ class Main {
 
 
 
+    }
 
 
+    public static void main(String[] args) throws Exception {
 
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+//        int n = Integer.parseInt(br.readLine());
+//
+//        int[] arr = new int[n];
+//        StringTokenizer st = new StringTokenizer(br.readLine());
+//        for(int i = 0; i < n; i++) {
+//            arr[i] = Integer.parseInt(st.nextToken());
+//        }
+
+        int n = 5;
+
+        ArrayList<Record> records = new ArrayList<>();
+//        records.add(new Record(1, "01:10"));
+//        records.add(new Record(2, "21:10"));
+//        records.add(new Record(2, "31:30"));
+
+        records.add(new Record(1, "01:10"));
+        records.add(new Record(1, "02:20"));
+        records.add(new Record(2, "45:30"));
+        records.add(new Record(2, "46:40"));
+        records.add(new Record(2, "47:50"));
+        solution2(n, records);
     }
 
     /**
@@ -102,34 +126,6 @@ class Main {
             this.second = convertStringToSecond(second);
         }
 
-    }
-
-
-    public static void main(String[] args) throws Exception {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-//        int n = Integer.parseInt(br.readLine());
-//
-//        int[] arr = new int[n];
-//        StringTokenizer st = new StringTokenizer(br.readLine());
-//        for(int i = 0; i < n; i++) {
-//            arr[i] = Integer.parseInt(st.nextToken());
-//        }
-
-        int n = 5;
-
-        ArrayList<Record> records = new ArrayList<>();
-//        records.add(new Record(1, "01:10"));
-//        records.add(new Record(2, "21:10"));
-//        records.add(new Record(2, "31:30"));
-
-        records.add(new Record(1, "01:10"));
-        records.add(new Record(1, "02:20"));
-        records.add(new Record(2, "45:30"));
-        records.add(new Record(2, "46:40"));
-        records.add(new Record(2, "47:50"));
-        solution(n, records);
     }
 
 }
