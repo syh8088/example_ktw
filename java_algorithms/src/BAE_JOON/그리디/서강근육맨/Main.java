@@ -11,7 +11,7 @@ import java.util.*;
  */
 class Main {
 
-    public static void solution(int n, int[] arr) throws IOException {
+    public static void solution(int n, long[] arr) throws IOException {
 
 
 
@@ -24,15 +24,22 @@ class Main {
 
     public static void main(String[] args) throws Exception {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        int n = Integer.parseInt(br.readLine());
+//
+//        long[] arr = new long[n];
+//        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+//        for (int i = 0; i < n; i++) {
+//            arr[i] = Long.parseLong(st.nextToken());
+//        }
 
-        long[] arr = new long[n];
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-        for (int i = 0; i < n; i++) {
-            arr[i] = Integer.parseInt(st.nextToken());
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long [] weight = new long[n];
+        for(int i=0; i<n; i++){
+            weight[i] = sc.nextLong();
         }
-        solution2(n, arr);
+        solution2(n, weight);
     }
 
     /**
@@ -42,26 +49,27 @@ class Main {
 
         long answer = Integer.MIN_VALUE;
 
-        Long[] list = Arrays.stream(arr).boxed().toArray(Long[]::new);
-        Arrays.sort(list, (a, b) -> Math.toIntExact(b - a));
+//        Long[] list = Arrays.stream(arr).boxed().toArray(Long[]::new);
+//        Arrays.sort(list, (a, b) -> Math.toIntExact( (long) b - (long) a));
+        Arrays.sort(arr);
 
         int lt;
         int rt;
         if (n % 2 == 0) {
 
             lt = 0;
-            rt = list.length - 1;
+            rt = arr.length - 1;
         }
         else {
-            long max = list[0];
+            long max = arr[n - 1];
             answer = max;
-            lt = 1;
-            rt = list.length - 1;
+            lt = 0;
+            rt = arr.length - 2;
         }
 
         while (lt <= rt) {
-            long ltValue = list[lt];
-            long rtValue = list[rt];
+            long ltValue = arr[lt];
+            long rtValue = arr[rt];
 
             answer = Math.max(ltValue + rtValue, answer);
 
