@@ -36,7 +36,7 @@ class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         long [] weight = new long[n];
-        for(int i=0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             weight[i] = sc.nextLong();
         }
         solution2(n, weight);
