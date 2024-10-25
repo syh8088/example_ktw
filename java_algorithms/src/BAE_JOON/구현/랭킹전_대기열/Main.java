@@ -11,6 +11,13 @@ import java.util.*;
  */
 class Main {
 
+    /**
+     *
+     * @param p: 플레이어 수
+     * @param m: 방의 정원 수
+     * @param lArray: 플레이어 레벨
+     * @param nArray: 플레이어 닉네임
+     */
     public static void solution(int p, int m, int[] lArray, String[] nArray) {
 
 
@@ -18,8 +25,52 @@ class Main {
 
 
 
-
+        
     }
+
+
+
+
+    public static void main(String[] args) throws Exception {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+//        int n = Integer.parseInt(br.readLine());
+//
+//        int[] arr = new int[n];
+//        StringTokenizer st = new StringTokenizer(br.readLine());
+//        for(int i = 0; i < n; i++) {
+//            arr[i] = Integer.parseInt(st.nextToken());
+//        }
+
+        int p = 10;
+        int m = 5;
+
+        int[] lArray = new int[] {10, 15, 20, 25, 30, 17, 18, 26, 24, 28};
+        String[] nArray = new String[] {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
+
+        solution(p, m, lArray, nArray);
+    }
+
+
+
+
+    public static class Player implements Comparable<Player> {
+        int level;
+        String name;
+
+        public Player(int level, String name) {
+            this.level = level;
+            this.name = name;
+        }
+
+        @Override
+        public int compareTo(Player o) {
+            return this.name.compareTo(o.name); // 문자열 정렬
+        }
+    }
+
+
 
     /**
      * 정답
@@ -69,43 +120,6 @@ class Main {
                 System.out.println(player.level + " " + player.name);
             }
         }
-    }
-
-    public static class Player implements Comparable<Player> {
-        int level;
-        String name;
-
-        public Player(int level, String name) {
-            this.level = level;
-            this.name = name;
-        }
-
-        @Override
-        public int compareTo(Player o) {
-            return this.name.compareTo(o.name); // 문자열 정렬
-        }
-    }
-
-
-    public static void main(String[] args) throws Exception {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-//        int n = Integer.parseInt(br.readLine());
-//
-//        int[] arr = new int[n];
-//        StringTokenizer st = new StringTokenizer(br.readLine());
-//        for(int i = 0; i < n; i++) {
-//            arr[i] = Integer.parseInt(st.nextToken());
-//        }
-
-        int p = 10;
-        int m = 5;
-
-        int[] lArray = new int[] {10, 15, 20, 25, 30, 17, 18, 26, 24, 28};
-        String[] nArray = new String[] {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j"};
-
-        solution2(p, m, lArray, nArray);
     }
 
 }
