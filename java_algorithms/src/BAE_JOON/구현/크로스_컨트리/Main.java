@@ -13,7 +13,7 @@ class Main {
 
     public static void solution2(int n, int[] board) {
 
-        
+
 
 
 
