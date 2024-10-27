@@ -3,12 +3,22 @@ package COMPANY_EMULSION.section2.part6;
 import java.util.*;
 
 class Solution {
+
+    
+
     public int solution(int[][] fruit) {
 
         int answer = 0;
 
+
+
+
+
+
         return answer;
     }
+
+
 
     public static void main(String[] args) {
 

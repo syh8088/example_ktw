@@ -43,6 +43,7 @@ class Solution {
         int[] ch = new int[n];
 
         for (int i = 0; i < n; i++) {
+
             if (ch[i] == 1) {
                 continue;
             }
@@ -51,7 +52,8 @@ class Solution {
                 continue;
             }
 
-            for (int j = i+1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
+
                 if (ch[j] == 1) {
                     continue;
                 }
