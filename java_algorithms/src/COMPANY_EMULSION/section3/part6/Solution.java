@@ -4,7 +4,7 @@ import java.util.*;
 
 class Solution {
 
-    
+
     public String[] solution2(String[] reports, String times) {
 
         String[] answer = {};

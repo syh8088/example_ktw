@@ -4,9 +4,15 @@ import java.util.*;
 
 class Solution {
 
-    public int[] solution2(int[] enter, int[] exit) {
+    public int[] solution(int[] enter, int[] exit) {
 
         int[] answer = {};
+
+
+
+
+
+
 
 
 
@@ -14,6 +20,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
+
         Solution T = new Solution();
 
         System.out.println(Arrays.toString(
@@ -28,12 +35,4 @@ class Solution {
         System.out.println(Arrays.toString(T.solution(new int[]{1, 4, 2, 3}, new int[]{2, 1, 4, 3})));
     }
 
-    public int[] solution(int[] enter, int[] exit) {
-
-        int[] answer = {};
-
-
-
-        return answer;
-    }
 }
