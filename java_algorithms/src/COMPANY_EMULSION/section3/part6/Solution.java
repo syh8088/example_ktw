@@ -4,6 +4,7 @@ import java.util.*;
 
 class Solution {
 
+    
     public String[] solution2(String[] reports, String times) {
 
         String[] answer = {};
@@ -14,13 +15,12 @@ class Solution {
 
 
 
-
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
-        System.out.println(Arrays.toString(T.solution2(new String[]{
+        System.out.println(Arrays.toString(T.solution2(new String[] {
                 "john 15:23",
                 "daniel 09:30",
                 "tom 07:23",

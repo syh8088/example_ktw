@@ -33,12 +33,13 @@ class Solution {
         //String[] answer ={};
         ArrayList<Info> tmp = new ArrayList<>();
 
-        for(String x : reports) {
+        for (String x : reports) {
             String a = x.split(" ")[0];
             String b = x.split(" ")[1];
 
             tmp.add(new Info(a, getTime(b)));
         }
+
         Collections.sort(tmp);
 
         int s = getTime(times.split(" ")[0]);
