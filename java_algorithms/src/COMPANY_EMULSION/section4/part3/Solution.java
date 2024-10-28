@@ -7,7 +7,11 @@ class Solution {
 
     public int[] solution(int[] arrival, int[] state) {
 
+
         int[] answer = new int[arrival.length];
+
+
+        
 
 
 
