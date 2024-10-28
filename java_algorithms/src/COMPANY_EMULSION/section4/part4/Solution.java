@@ -9,12 +9,30 @@ class Solution {
         int answer = 0;
 
 
-
-
         
 
 
+
+
+
+
+
+
+
+
         return answer;
+    }
+
+    class Time2 {
+        int enterTime;
+        int laserTime;
+        int endTime;
+
+        public Time2(int enterTime, int laserTime) {
+            this.enterTime = enterTime;
+            this.laserTime = laserTime;
+            this.endTime = laserTime + enterTime;
+        }
     }
 
     public static void main(String[] args) {
