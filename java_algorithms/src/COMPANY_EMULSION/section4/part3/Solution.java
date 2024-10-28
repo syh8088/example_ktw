@@ -11,7 +11,7 @@ class Solution {
         int[] answer = new int[arrival.length];
 
 
-        
+
 
 
 

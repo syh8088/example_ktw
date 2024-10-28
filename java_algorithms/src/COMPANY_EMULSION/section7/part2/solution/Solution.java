@@ -15,7 +15,7 @@ class Solution {
             answer++;
         }
         else {
-            for(int i = 1; i < 8; i++) {
+            for (int i = 1; i < 8; i++) {
 
                 if (!pm.empty() && relation[pm.peek()][i] == 1) {
                     continue;
