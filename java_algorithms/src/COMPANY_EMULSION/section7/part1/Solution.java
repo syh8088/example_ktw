@@ -13,7 +13,7 @@ class Solution {
     }
 
 
-    
+
     public static void main(String[] args) {
         Solution T = new Solution();
         System.out.println(T.solution(123));
