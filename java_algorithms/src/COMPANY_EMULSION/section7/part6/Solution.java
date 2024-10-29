@@ -4,7 +4,6 @@ import java.util.*;
 
 class Solution {
 
-    int[] pm;
     public int solution(String s) {
 
         int answer = 0;
@@ -14,7 +13,7 @@ class Solution {
 
         return answer;
     }
-
+    
 
     public static void main(String[] args) {
         Solution T = new Solution();
