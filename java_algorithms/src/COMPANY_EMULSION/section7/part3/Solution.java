@@ -8,12 +8,18 @@ class Solution {
 
     public int solution(int[][] cans) {
 
+        answer = 0;
+
 
 
 
 
         return answer;
     }
+
+
+
+
 
     public static void main(String[] args) {
 
