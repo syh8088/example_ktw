@@ -36,6 +36,7 @@ class Main {
     // 상 하 좌 우 범위 체크에서 사용할 배열
     static int[] dx = {-1, 0, 1, 0};
     static int[] dy = {0, 1, 0, -1};
+
     static int count = 0;
 
     public static void main(String[] args) throws Exception {
@@ -57,8 +58,8 @@ class Main {
 //                map[i][j] = ch;
 //            }
 //        }
-        N = 5;
-        M = 5;
+        N = 5; // 가로
+        M = 5; // 세로
         map = new char[][] {
                 {'W', 'B', 'W', 'W', 'W'},
                 {'W', 'W', 'W', 'W', 'W'},
@@ -87,7 +88,7 @@ class Main {
                 if (!visit[i][j]) {
                     char color = map[i][j];
                     count = 0;
-                    DFS(j, i, color);
+                    DFS(i, j, color);
 
                     if (color == 'W') {
                         white_count += count * count;
@@ -103,28 +104,33 @@ class Main {
         System.out.println(white_count + " " + black_count);
     }
 
-    public static void DFS(int x, int y, char color) {
+    /**
+     *
+     * @param i: 세로
+     * @param j: 가로
+     */
+    public static void DFS(int i, int j, char color) {
 
-        visit[y][x] = true;
+        visit[i][j] = true;
         count += 1;
 
-        for (int i = 0; i < 4; i++) {
-            int nx = x + dx[i];
-            int ny = y + dy[i];
+        for (int e = 0; e < 4; e++) {
+            int nx = i + dx[e];
+            int ny = j + dy[e];
 
             if (nx < 0 || ny < 0 || nx >= N || ny >= M) {
                 continue;
             }
 
-            if (map[ny][nx] != color) {
+            if (map[nx][ny] != color) {
                 continue;
             }
 
-            if (visit[ny][nx]) {
+            if (visit[nx][ny]) {
                 continue;
             }
 
-            DFS(nx, ny, map[ny][nx]);
+            DFS(nx, ny, map[nx][ny]);
         }
 
     }
