@@ -8,13 +8,15 @@ class Solution {
 
     public int solution2(int s, int e) {
 
-        answer = 0;
+        int answer = 0;
 
 
 
 
 
-        return -1;
+        
+
+        return answer;
     }
 
     public static void main(String[] args) {
@@ -27,18 +29,4 @@ class Solution {
         System.out.println(T.solution2(2, 54321));
     }
 
-
-
-    public int solution(int s, int e) {
-
-        int answer = 0;
-
-
-
-
-
-
-
-        return answer;
-    }
 }
