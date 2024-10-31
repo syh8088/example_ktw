@@ -51,8 +51,26 @@ class Main {
          */
         int[] arr2 = new int[N];
         st = new StringTokenizer(br.readLine());
-        for(int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) {
             arr2[i] = Integer.parseInt(st.nextToken());
+        }
+
+
+        /**
+         * 💥example>
+         * 1 2
+         * 2 3
+         * 1 5
+         * 4 6
+         */
+        int[][] arr3 = new int[N][N];
+        StringTokenizer st2;
+        for (int i = 0; i < K; i++) {
+            st2 = new StringTokenizer(br.readLine(), " ");
+            int x = Integer.parseInt(st2.nextToken());
+            int y = Integer.parseInt(st2.nextToken());
+
+            arr3[x][y] = 1;
         }
 
         solution2(N, K, arr);
