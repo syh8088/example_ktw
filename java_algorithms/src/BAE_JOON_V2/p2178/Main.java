@@ -71,49 +71,9 @@ class Main {
      */
     public static void solution2() {
 
-        Queue<int[]> queue = new LinkedList<>();
-        queue.offer(new int[] {0, 0});
-        dis = new int[board.length][board[0].length];
-//        dis[0][0] = 1;
-        dis[0][0] = 1;
 
-        int L = 0;
 
-        while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int i = 0; i < size; i++) {
-                int[] poll = queue.poll();
 
-                int x = poll[0];
-                int y = poll[1];
-
-//                if (x == N && y == M) {
-//                    return L;
-//                }
-
-                for (int k = 0; k < 4; k++) {
-                    int nx = x + dx[k];
-                    int ny = y + dy[k];
-
-                    if (nx < 0 || ny < 0 || nx > N || ny > M) {
-                        continue;
-                    }
-
-                    if (board[nx][ny] == 0) {
-                        continue;
-                    }
-
-                    if (dis[nx][ny] > 0) {
-                        continue;
-                    }
-
-                    queue.offer(new int[] {nx, ny});
-                    dis[nx][ny] = dis[x][y] + 1;
-                }
-            }
-
-            L++;
-        }
     }
 
 
