@@ -11,7 +11,7 @@ import java.util.*;
  */
 class Main {
 
-    public static void solution(int n, long[] arr) throws IOException {
+    public static void solution(int N, long[] arr) throws IOException {
 
 
 
@@ -72,6 +72,23 @@ class Main {
 
             arr3[x][y] = 1;
         }
+
+        /**
+         * 💥example>
+         * 0 1 2 3
+         * 4 0 5 6
+         * 7 1 0 2
+         * 3 4 5 0
+         */
+        int[][] arr4 = new int[N][N];
+
+        for (int i = 0; i < N; i++) {
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < N; j++) {
+                arr4[i][j] = Integer.parseInt(st.nextToken());
+            }
+        }
+
 
         solution2(N, K, arr);
     }
