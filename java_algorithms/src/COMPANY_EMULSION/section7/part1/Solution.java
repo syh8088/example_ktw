@@ -5,13 +5,14 @@ import java.util.*;
 class Solution {
 
     int answer;
-
+    
     public int solution(int n) {
+
+
 
 
         return answer;
     }
-
 
 
     public static void main(String[] args) {
