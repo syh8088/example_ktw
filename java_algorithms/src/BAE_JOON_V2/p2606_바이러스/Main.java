@@ -13,9 +13,11 @@ class Main {
 
     public static void solution2() {
 
+        
 
+    }
 
-
+    public static void DFS2(int v) {
 
 
 
@@ -31,44 +33,44 @@ class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        N = Integer.parseInt(br.readLine());
-        K = Integer.parseInt(br.readLine());
+//        N = Integer.parseInt(br.readLine());
+//        K = Integer.parseInt(br.readLine());
 
-//        N = 7;
-//        K = 6;
+        N = 7;
+        K = 6;
 
         graph = new ArrayList<>();
         for (int i = 0; i <= N; i++) {
             graph.add(new ArrayList<>());
         }
 
-        StringTokenizer st;
-        for (int i = 0; i < K; i++) {
-            st = new StringTokenizer(br.readLine(), " ");
-            int x = Integer.parseInt(st.nextToken());
-            int y = Integer.parseInt(st.nextToken());
+//        StringTokenizer st;
+//        for (int i = 0; i < K; i++) {
+//            st = new StringTokenizer(br.readLine(), " ");
+//            int x = Integer.parseInt(st.nextToken());
+//            int y = Integer.parseInt(st.nextToken());
+//
+//            graph.get(x).add(y);
+//            graph.get(y).add(x);
+//        }
 
-            graph.get(x).add(y);
-            graph.get(y).add(x);
-        }
+        graph.get(1).add(2);
+        graph.get(2).add(3);
+        graph.get(1).add(5);
+        graph.get(5).add(2);
+        graph.get(5).add(6);
+        graph.get(4).add(7);
 
-//        graph.get(1).add(2);
-//        graph.get(2).add(3);
-//        graph.get(1).add(5);
-//        graph.get(5).add(2);
-//        graph.get(5).add(6);
-//        graph.get(4).add(7);
-
-//        graph.get(2).add(1);
-//        graph.get(3).add(2);
-//        graph.get(5).add(1);
-//        graph.get(2).add(5);
-//        graph.get(6).add(5);
-//        graph.get(7).add(4);
+        graph.get(2).add(1);
+        graph.get(3).add(2);
+        graph.get(5).add(1);
+        graph.get(2).add(5);
+        graph.get(6).add(5);
+        graph.get(7).add(4);
 
         ch = new int[N + 1];
         answer = 0;
-        solution();
+        solution2();
         System.out.println(answer);
     }
 
