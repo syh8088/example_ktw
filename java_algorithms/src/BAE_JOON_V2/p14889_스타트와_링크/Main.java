@@ -11,10 +11,19 @@ import java.util.*;
  */
 class Main {
 
-    public void solution(int N, int[][] arr) {
+    public static void solution(int n, int[][] arr) {
 
+        N = n;
+        visited = new boolean[N];
+        board = arr;
+        Min = Integer.MAX_VALUE;
 
+        dfs2(0, 0);
 
+        System.out.println(Min);
+    }
+
+    public static void dfs2(int idx, int depth) {
 
 
 
@@ -38,7 +47,7 @@ class Main {
 //        }
 //        T.solution(N, arr);
 
-        solution3(4, new int[][] {
+        solution(4, new int[][] {
                 { 0, 1, 2, 3 },
                 { 4, 0, 5, 6 },
                 { 7, 1, 0, 2 },
