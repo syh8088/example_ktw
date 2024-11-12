@@ -1,9 +1,7 @@
 package BAE_JOON_V2.p1303;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 /**
  * https://www.acmicpc.net/problem/1303
@@ -13,15 +11,10 @@ import java.util.StringTokenizer;
  */
 class Main {
 
-    public static void solution(int n, long[] arr) throws IOException {
+    public static void solution() {
 
 
-
-
-
-
-
-
+        
     }
 
     static int N; // 가로
