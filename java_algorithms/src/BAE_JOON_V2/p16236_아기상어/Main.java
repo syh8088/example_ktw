@@ -11,6 +11,13 @@ import java.util.*;
  */
 class Main {
 
+    private static void solution(int n, int[][] arr) {
+
+
+
+
+    }
+
     private static void bfs2(int N) {
 
 
@@ -18,6 +25,7 @@ class Main {
 
 
 
+        
     }
 
     public static void main(String[] args) throws Exception {
@@ -38,7 +46,7 @@ class Main {
 //        }
 //        T.solution(N, arr);
 
-        solution3(4, new int[][] {
+        solution(4, new int[][] {
                 { 4, 3, 2, 1 },
                 { 0, 0, 0, 0 },
                 { 0, 0, 9, 0 },
@@ -74,7 +82,7 @@ class Main {
         size = 2;
         eat = 0;
         move = 0;
-        bfs2(n);
+        bfs(n);
     }
 
     private static void bfs(int N) {
