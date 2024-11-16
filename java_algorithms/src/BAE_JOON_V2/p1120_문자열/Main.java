@@ -66,7 +66,7 @@ class Main {
             lt++;
             rt++;
         }
-        
+
         System.out.println(answer);
     }
 

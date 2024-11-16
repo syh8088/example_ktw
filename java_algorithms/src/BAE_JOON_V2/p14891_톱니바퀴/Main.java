@@ -11,14 +11,24 @@ import java.util.*;
  */
 class Main {
 
-    private static void bfs2(int N) {
 
+    private static void solution(int K, int[][] input) {
 
 
 
 
 
     }
+
+    public static ArrayList<Integer>[] gear = new ArrayList[4];
+
+    /**
+     *  1 : 오른쪽 회전
+     * -1 : 왼쪽 회전
+     *  0 : 회전 X
+     */
+    public static int[] gear_direction = new int[4];
+    public static int score = 0;
 
     public static void main(String[] args) throws Exception {
 
@@ -60,12 +70,8 @@ class Main {
                 {1, 1}
         };
 
-        solution3(K, input);
+        solution(K, input);
     }
-
-    public static ArrayList<Integer>[] gear = new ArrayList[4];
-    public static int gear_direction[] = new int[4];     // 1 : 오른쪽 회전, -1 : 왼쪽 회전, 0 : 회전x
-    public static int score = 0;
 
     private static void solution3(int K, int[][] input) {
 
@@ -83,9 +89,11 @@ class Main {
             for (int j = 0; j < 4; j++) {
                 if (gear_direction[j] == 1) {
                     rightTurn(j);
-                } else if (gear_direction[j] == -1) {
+                }
+                else if (gear_direction[j] == -1) {
                     leftTurn(j);
-                } else {
+                }
+                else {
                     continue;
                 }
             }
@@ -102,7 +110,8 @@ class Main {
         if (gear[gear_num - 1].get(2) != gear[gear_num].get(6)) {
             if (gear_direction[gear_num] == 1) {
                 gear_direction[gear_num - 1] = -1;
-            } else if(gear_direction[gear_num] == -1) {
+            }
+            else if(gear_direction[gear_num] == -1) {
                 gear_direction[gear_num - 1] = 1;
             }
             left(gear_num - 1);
