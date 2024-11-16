@@ -10,16 +10,8 @@ class Solution {
 
         answer = 0;
 
-
-
-
-
         return answer;
     }
-
-
-
-
 
     public static void main(String[] args) {
 
