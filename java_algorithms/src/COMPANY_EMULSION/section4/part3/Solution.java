@@ -7,22 +7,17 @@ class Solution {
 
     public int[] solution(int[] arrival, int[] state) {
 
-
         int[] answer = new int[arrival.length];
 
 
 
 
-
-
-
-
-
+        
 
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution T = new Solution();
         System.out.println(Arrays.toString(T.solution(
                 new int[]{0, 1, 1, 1, 2, 3, 8, 8},
