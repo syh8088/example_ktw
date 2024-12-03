@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class Main {
 
-
-
     public int solution2(int n, int m, int[] arr) {
 
         int answer = 0;
@@ -15,12 +13,8 @@ public class Main {
 
 
 
-
-
-
         return answer;
     }
-
 
     public static void main(String[] args) {
 
@@ -40,7 +34,7 @@ public class Main {
     }
 
     /**
-     *
+     * 정답
      */
     public int solution(int n, int m, int[] arr) {
 
