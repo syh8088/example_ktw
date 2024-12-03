@@ -9,7 +9,7 @@ public class Main {
         int[] answer = new int[str.length()];
 
 
-        
+
 
 
         return answer;
