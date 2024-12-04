@@ -11,7 +11,7 @@ import java.util.*;
  */
 class Main {
 
-    public static void solution2(int p, int m, int[] lArray, String[] nArray) {
+    public static void solution2(int h, int w, int[][] arr) {
 
 
 
@@ -112,6 +112,8 @@ class Main {
                 {9, 10, 11, 12},
                 {13, 14, 15, 16}
         };
+
+        solution2(N, N, arr);
 
         StringBuilder sb = new StringBuilder();
 

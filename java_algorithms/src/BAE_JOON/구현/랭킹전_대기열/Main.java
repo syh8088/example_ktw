@@ -24,11 +24,7 @@ class Main {
 
 
 
-
-
     }
-
-
 
 
     public static void main(String[] args) throws Exception {
@@ -69,8 +65,6 @@ class Main {
             return this.name.compareTo(o.name); // 문자열 정렬
         }
     }
-
-
 
     /**
      * 정답
