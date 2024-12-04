@@ -19,9 +19,38 @@ class Main {
 
 
 
-
-
     }
+
+    static StringBuilder sb = new StringBuilder();
+    public static void main(String[] args) throws Exception {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int T = Integer.parseInt(br.readLine());
+//        for (int i = 0; i < T; i++) {
+//            int n = Integer.parseInt(br.readLine());
+//
+//            StringTokenizer st = new StringTokenizer(br.readLine());
+//            int[] arr = new int[n];
+//            for (int j = 0; j < n; j++) {
+//                arr[j] = Integer.parseInt(st.nextToken());
+//            }
+//            solution(n, arr);
+//        }
+
+        int T = 2;
+        int n1 = 15;
+        int[] n1Arr = new int[] {1, 2, 3, 3, 1, 3, 2, 4, 1, 1, 3, 1, 3, 3, 1};
+        solution2(n1, n1Arr);
+
+        int n2 = 18;
+        int[] n2Arr = new int[] {1, 2, 3, 1, 2, 3, 1, 2, 3, 3, 3, 3, 2, 2, 2, 1, 1, 1};
+        solution2(n2, n2Arr);
+
+        System.out.println(sb);
+    }
+
+
 
     /**
      * 정답
@@ -76,35 +105,6 @@ class Main {
         }
 
         sb.append(priorityQueue.poll().teamNo).append("\n");
-    }
-
-    static StringBuilder sb = new StringBuilder();
-    public static void main(String[] args) throws Exception {
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//
-//        int T = Integer.parseInt(br.readLine());
-//        for (int i = 0; i < T; i++) {
-//            int n = Integer.parseInt(br.readLine());
-//
-//            StringTokenizer st = new StringTokenizer(br.readLine());
-//            int[] arr = new int[n];
-//            for (int j = 0; j < n; j++) {
-//                arr[j] = Integer.parseInt(st.nextToken());
-//            }
-//            solution(n, arr);
-//        }
-
-        int T = 2;
-        int n1 = 15;
-        int[] n1Arr = new int[] {1, 2, 3, 3, 1, 3, 2, 4, 1, 1, 3, 1, 3, 3, 1};
-        solution2(n1, n1Arr);
-
-        int n2 = 18;
-        int[] n2Arr = new int[] {1, 2, 3, 1, 2, 3, 1, 2, 3, 3, 3, 3, 2, 2, 2, 1, 1, 1};
-        solution2(n2, n2Arr);
-
-        System.out.println(sb);
     }
 
     public static class Team {
