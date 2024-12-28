@@ -6,9 +6,14 @@ class Solution {
 
     int answer;
 
+
     public int solution(int[][] cans) {
 
         answer = 0;
+
+
+
+
 
         return answer;
     }
