@@ -6,10 +6,15 @@ class Solution {
 
     int answer;
 
+
+
     public int solution(int n) {
 
+        answer = 0;
 
 
+
+        
 
         return answer;
     }
