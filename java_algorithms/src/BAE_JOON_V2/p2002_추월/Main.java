@@ -11,8 +11,7 @@ import java.util.*;
  */
 class Main {
 
-    public static void solution(int N, long[] arr) throws IOException {
-
+    public static void solution(int N, String[] arr, String[] arr2) {
 
 
 
