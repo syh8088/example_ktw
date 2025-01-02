@@ -8,12 +8,13 @@ class Solution {
     public int[] solution2(int[][] tasks) {
 
         int[] answer = {};
-        List<Integer> result = new ArrayList<>();
+
+
+
+
+
 
         
-
-
-
         return answer;
     }
 
