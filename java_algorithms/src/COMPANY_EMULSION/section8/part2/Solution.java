@@ -6,12 +6,17 @@ class Solution {
 
     int answer;
 
+    int[][] ch;
+    int L;
+
+
     public int solution2(int[] pool, int a, int b, int home) {
 
         answer = 0;
 
 
 
+        
 
         return -1;
     }
