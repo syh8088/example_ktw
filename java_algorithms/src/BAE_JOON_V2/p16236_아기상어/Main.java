@@ -15,21 +15,9 @@ class Main {
 
 
 
-
-
-
-
-
     }
 
     private static void bfs2(int N) {
-
-
-
-
-
-
-
 
 
 

@@ -24,6 +24,31 @@ class Main {
 
     public static void main(String[] args) throws Exception {
 
+        /**
+         * 💥example>
+         * 1 2
+         * 2 3
+         * 1 5
+         * 4 6
+         */
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int n = Integer.parseInt(st.nextToken());
+
+        int[][] arr = new int[n][2];
+        for (int i = 0; i < n; i++) {
+            st = new StringTokenizer(br.readLine());
+            arr[i][0] = Integer.parseInt(st.nextToken());
+            arr[i][1] = Integer.parseInt(st.nextToken());
+        }
+
+        System.out.println("arr = " + arr);
+    }
+
+
+    public static void main2(String[] args) throws Exception {
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
