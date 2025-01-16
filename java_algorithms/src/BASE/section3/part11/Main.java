@@ -13,6 +13,7 @@ public class Main {
 
 
 
+        
 
         return answer;
     }
@@ -32,7 +33,7 @@ public class Main {
 //        }
 //        System.out.print(T.solution5(n, arr));
 
-        System.out.print(T.solution2(5, new int[][] {
+        System.out.print(T.solution5(5, new int[][] {
                 { 0, 0, 0, 0, 0, 0 },
                 { 0, 2, 3, 1, 7, 3 },
                 { 0, 4, 1, 9, 6, 8 },
