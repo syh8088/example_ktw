@@ -25,7 +25,17 @@ public class Main {
     public int solution2(int n, ArrayList<Body> arr) {
 
         int cnt = 0;
+        Collections.sort(arr);
+        cnt++;
+        int max = arr.get(0).w;
+        for (int i = 1; i < n; i++) {
+            Body body = arr.get(i);
+            if (body.w > max) {
+                max = body.w;
+                cnt++;
+            }
 
+        }
 
 
 
@@ -64,15 +74,9 @@ public class Main {
     public int solution(int n, ArrayList<Body> arr) {
         int cnt = 0;
 
-        Collections.sort(arr);
-        int max = Integer.MIN_VALUE;
 
-        for (Body body : arr) {
-            if (body.w > max) {
-                cnt++;
-                max = body.w;
-            }
-        }
+
+        
 
         return cnt;
     }
