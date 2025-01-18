@@ -24,8 +24,7 @@ public class Main {
         int answer = 0;
 
 
-
-
+        
 
 
 
@@ -47,8 +46,8 @@ public class Main {
 //        }
 //        System.out.print(T.solution(n, m, arr));
 
-        System.out.print(T.solution2(5, 2, new int[]{ 60, 50, 70, 80, 90 }));
-        System.out.print(T.solution2(6, 3, new int[]{ 70, 60, 90, 60, 60, 60 }));
+        System.out.println(T.solution2(5, 2, new int[]{ 60, 50, 70, 80, 90 }));
+        System.out.println(T.solution2(6, 3, new int[]{ 70, 60, 90, 60, 60, 60 }));
     }
 
     /**
