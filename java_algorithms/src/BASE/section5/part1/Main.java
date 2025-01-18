@@ -9,6 +9,12 @@ public class Main {
     public char solution2(int n, String target) {
 
         char answer = ' ';
+
+
+
+
+        
+
         return answer;
     }
 
