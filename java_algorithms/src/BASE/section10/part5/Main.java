@@ -31,8 +31,30 @@ class Main {
 
 
 
+
+        
     }
 
+    /**
+     * 💥입력예제>
+     6 9
+     1 2 12 // 1번 정점에서 2번 정점으로 가는데 12의 비용이 든다.
+     1 3 4
+     2 1 2
+     2 3 5
+     2 5 5
+     3 4 5
+     4 2 2
+     4 5 5
+     6 4 5
+
+     * 💥정답>
+     2 : 11
+     3 : 4
+     4 : 9
+     5 : 14
+     6 : impossible
+     */
     public static void main(String[] args) {
 
         Main T = new Main();
@@ -41,8 +63,8 @@ class Main {
 //        n = kb.nextInt();
 //        m = kb.nextInt();
 
-        n = 6;
-        m = 9;
+        n = 6; // 정점의 수
+        m = 9; // 간선의 수
 
         graph = new ArrayList<ArrayList<Edge>>();
         for (int i = 0; i <= n; i++) {
