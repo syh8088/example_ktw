@@ -30,7 +30,7 @@ public class Main {
     public int solution2(int n, ArrayList<CourseSlug> arr) {
 
         int cnt = 0;
-        
+
 
 
 
