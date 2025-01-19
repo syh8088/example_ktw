@@ -30,6 +30,7 @@ public class Main {
     public int solution2(int n, ArrayList<CourseSlug> arr) {
 
         int cnt = 0;
+        
 
 
 
@@ -63,7 +64,7 @@ public class Main {
     }
 
     /**
-     *
+     * 정답
      */
     public int solution(int n, ArrayList<CourseSlug> arr) {
 
