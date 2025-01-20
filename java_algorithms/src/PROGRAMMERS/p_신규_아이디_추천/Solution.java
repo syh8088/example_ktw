@@ -1,5 +1,11 @@
 package PROGRAMMERS.p_신규_아이디_추천;
 
+/**
+ * https://school.programmers.co.kr/learn/courses/30/lessons/72410
+ *
+ * 💥풀이
+ * https://www.youtube.com/watch?v=KGmuGWMzXx8&list=PLlV7zJmoG4XIPxX-OSTAtTArU54kPDnui
+ */
 class Solution {
 
     public String solution2(String new_id) {
