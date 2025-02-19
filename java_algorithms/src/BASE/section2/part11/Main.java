@@ -8,12 +8,34 @@ public class Main {
     public String solution2(String str) {
 
         String answer = "";
+        str = str + " ";
+        char[] charArray = str.toCharArray();
 
+        int count = 1;
+        char c1;
+        for (int i = 0; i < charArray.length - 1; i++) {
+            char c = charArray[i];
+            c1 = charArray[i + 1];
 
+            if (c == c1) {
+                count++;
+            }
+            else {
+                if (count == 1) {
+                    answer = answer + c;
+                }
+                else {
+                    answer = answer + c + count;
+                }
 
+                count = 1;
+            }
 
+        }
 
+        char c = charArray[charArray.length - 1];
 
+        answer = answer + c;
 
         return answer;
     }
@@ -25,8 +47,8 @@ public class Main {
 //        String str = kb.next();
 //        System.out.print(T.solution2(str));
 
-        System.out.print(T.solution2("KKHSSSSSSSE"));
-//        System.out.print(T.solution2("KSTTTSEEKFKKKDJJGG"));
+        System.out.println(T.solution2("KKHSSSSSSSE"));
+        System.out.println(T.solution2("KSTTTSEEKFKKKDJJGG"));
     }
 
 
