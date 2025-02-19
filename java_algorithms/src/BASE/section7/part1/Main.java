@@ -6,6 +6,12 @@ public class Main {
 
     public int[] solution2(int n, int[] arr) {
 
+
+
+
+
+
+
         return arr;
     }
 
