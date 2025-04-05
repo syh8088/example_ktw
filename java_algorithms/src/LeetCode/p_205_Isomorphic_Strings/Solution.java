@@ -12,6 +12,21 @@ public class Solution {
 
     public boolean isIsomorphic2(String s, String t) {
 
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+
+        Solution T = new Solution();
+
+        System.out.println(T.isIsomorphic("egg", "add")); // true
+        System.out.println(T.isIsomorphic("foo", "bar")); // false
+    }
+
+
+    public boolean isIsomorphic(String s, String t) {
+
         Map<Character, Character> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
 
@@ -30,26 +45,9 @@ public class Solution {
 
                 map.put(sChar, tChar);
             }
-
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-
-        Solution T = new Solution();
-
-        System.out.println(T.isIsomorphic2("egg", "add")); // true
-        System.out.println(T.isIsomorphic2("foo", "bar")); // false
-    }
-
-
-    public boolean isIsomorphic(String s, String t) {
-
-
-
-        return false;
     }
 
 }

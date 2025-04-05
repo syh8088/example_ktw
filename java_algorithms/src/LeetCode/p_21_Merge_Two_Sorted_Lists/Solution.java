@@ -5,7 +5,7 @@ package LeetCode.p_21_Merge_Two_Sorted_Lists;
  * https://leetcode.com/problems/merge-two-sorted-lists/description/
  *
  * 💥풀이
- * https://jeonji.tistory.com/27
+ * https://devraphy.tistory.com/555
  */
 public class Solution {
 
@@ -31,6 +31,9 @@ public class Solution {
     public ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
 
 
+
+
+
          return null;
     }
 
@@ -47,6 +50,14 @@ public class Solution {
 
     /**
      * 정답
+     *
+     *        result                                 list
+     * "0" -> 1  -> 2  -> 4                      1 -> 2 -> 4
+     * "0  -> 1" -> 1  -> 3  -> 4                1 -> 3 -> 4
+     * "0  -> 1  -> 1" -> 2  -> 4                2 -> 4
+     * "0  -> 1  -> 1  -> 2" -> 3  -> 4          3 -> 4
+     * "0  -> 1  -> 1  -> 2  -> 3" -> 4          4
+     * "0  -> 1  -> 1  -> 2  -> 3  -> 4" -> 4    4
      */
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 

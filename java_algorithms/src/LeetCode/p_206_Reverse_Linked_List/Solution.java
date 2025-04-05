@@ -65,6 +65,12 @@ public class Solution {
             prev = current;
         }
 
+        ListNode prev = null;
+        while (head != null) {
+
+
+        }
+
 
         return prev;
     }
